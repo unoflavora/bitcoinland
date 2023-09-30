@@ -4,7 +4,7 @@ import Footer from "./footer";
 
 export default function Layout({children} : {children : ReactNode})
 {
-    return <div className="flex flex-col bg-white">
+    return <div className="flex flex-col gap-20 bg-white">
     <Navbar/>
         <main>
             {children}
