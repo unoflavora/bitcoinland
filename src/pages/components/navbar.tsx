@@ -70,7 +70,7 @@ export default function Navbar()
             className={`fixed flex flex-col w-full z-10`}>
             <div className='flex w-full items-center px-5 md:py-3 lg:py-5 transition-all drop-shadow-sm shadow-[#00000026] bg-grey lg:px-24  justify-between'>
      
-            <Link href="/" className='h-auto w-auto md:w-10 lg:w-14'>
+            <Link href="/" onClick={() =>setOpen(false)}  className='h-auto w-auto md:w-10 lg:w-14'>
                 <Image className='w-full h-full' src="/icon.png" width={30} height={25} alt='company logo'/>
 
             </Link>
@@ -80,7 +80,7 @@ export default function Navbar()
             </div>
             <ul className='max-sm:hidden flex gap-10 items-center lg:text-2xl'>
                 {links.map((title, i) => 
-                <Link href={`/${title !== "Home" ? title : ""}`} key={"link " + i}>
+                <Link  onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title : ""}`} key={"link " + i}>
                     {title}
                 </Link>)}
 
@@ -102,7 +102,7 @@ export default function Navbar()
                 className={`absolute translate-x-full flex flex-col top-12 text-3xl gap-10  bg-grey text-white b min-h-screen w-screen py-10 px-5 z-10`}>
 
                 {links.map((title, i) => 
-                <Link href={`/${title !== "Home" ? title : ""}`} key={"link " + i}>
+                <Link onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title : ""}`} key={"link " + i}>
                     <motion.li 
                         animate={{x: isOpen ? 0 : "200%"}}
                         transition={{delay : .1 * i, duration: .35}}
@@ -115,7 +115,7 @@ export default function Navbar()
 
                 )}
 
-                <Link href={`/contact`}>
+                <Link onClick={() =>setOpen(false)} href={`/contact`}>
                     <motion.li 
                         animate={{x: isOpen ? 0 : "200%"}}
                         transition={{delay : .1 * 2, duration: .35}}
