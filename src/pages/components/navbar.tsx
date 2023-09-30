@@ -47,7 +47,7 @@ export default function Navbar()
 
     useEffect(
         () => setIsInView(isScrollingBack || isAtTop),
-        [isScrollingBack, isAtTop, showNav]
+        [isScrollingBack, isAtTop]
     )
 
     useEffect(() => {
@@ -94,11 +94,10 @@ export default function Navbar()
 
             </div>
 
-            <motion.ul layout
+            <motion.ul
                 initial={{x: "100%"}}
                 animate={{x: isOpen ? 0 : "100%"}}
                 transition={{ease : easeInOut, duration: .2}}
-                onAnimationComplete={(e) => setNavVisible(isOpen) }
                 className={`absolute translate-x-full flex flex-col top-12 text-3xl gap-10  bg-grey text-white b min-h-screen w-screen py-10 px-5 z-10`}>
 
                 {links.map((title, i) => 
