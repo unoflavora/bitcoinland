@@ -4,9 +4,9 @@ import Footer from "./footer";
 
 export default function Layout({children} : {children : ReactNode})
 {
-    return <div className="flex flex-col gap-20 bg-white">
+    return <div className="flex flex-col gap-20 min-h-screen justify-between bg-white">
     <Navbar/>
-        <main>
+        <main className="grow">
             {children}
         </main>
     <Footer/>

@@ -46,7 +46,7 @@ export default function Navbar()
     )
 
     useEffect(
-        () => setIsInView(showNav && (isScrollingBack || isAtTop)),
+        () => setIsInView(isScrollingBack || isAtTop),
         [isScrollingBack, isAtTop, showNav]
     )
 
