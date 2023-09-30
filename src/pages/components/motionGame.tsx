@@ -5,7 +5,7 @@ import ColorizedText from './colorizedText'
 export default function MotionGame(props: {index : number})
 {
     return (
-        <div className={`flex flex-col ${props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}     lg:h-full gap-10`}>
+        <div className={`flex flex-col ${props.index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"}  lg:h-full gap-10`}>
             <motion.div 
                 whileInView={{ opacity: 1, scale: 1 }}
                 initial={{ opacity: 0,scale: 0.6}}
@@ -16,7 +16,7 @@ export default function MotionGame(props: {index : number})
                 <TemplateImage/>
             </motion.div>
 
-            <div className='flex flex-col gap-3 '>
+            <div className='flex flex-col gap-3 md:w-3/4 '>
                     <motion.div 
                         whileInView={{ opacity: 1, scale: 1 }}
                         initial={{ opacity: 0,scale: 0.6}}
