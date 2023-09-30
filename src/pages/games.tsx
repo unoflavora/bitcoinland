@@ -1,33 +1,35 @@
 import MotionDiv from "./components/motionDiv";
 import ColorizedText from "./components/colorizedText";
+import MotionGame from "./components/motionGame";
 
 export default function Games()
 {
   const stats = [{
     title: "+500M Downloads",
-    from : "from-red-100",
-    to: "to-yellow-100",
+    from : "from-red-500",
+    to: "to-yellow-400",
     desc: "We are at the beginning of our mission to deliver fun and over 300 million players have already joined us"
   },
   {
     title: "15 games live",
-    from : "from-slate-100",
-    to: "to-grey-100",
+    from : "from-blue-400",
+    to: "to-grey-300",
     desc: "Creating amazing games is our DNA! Come and discover our latest games and future releases."
   }
 ]
-  return <div className="flex flex-col gap-20">
-   <MotionDiv>
-        <h1 className='text-5xl text-black text-center font-bold'> Discover our mad dream of making the world play!</h1>
+  return <div className="flex flex-col gap-10 lg:gap-44 px-5 py-5 md:px-10 lg:px-36">
+  <div className="w-full lg:px-56 lg:w-[70%]">
+  <MotionDiv>
+        <h1 className='text-5xl lg:text-9xl text-black text-start font-bold '> We create games with mad passion!</h1>
+        <p className='text-base lg:text-3xl text-black'>Our story is fueled by creativity. That is why we put creative people at the heart of everything we do. Game making is an enjoyment that is shared endlessly, and with the world.</p>
    </MotionDiv>
 
-    <div className="flex flex-col gap-5">
-        {stats.map((stat, i) => <MotionDiv key={'stat' + i}>
-            <div className={`py-10 px-5 flex flex-col gap-4 bg-gradient-to-b from-red-100 to-yellow-100 rounded-2xl`}>
-                <ColorizedText text={"+500M Download"} from="from-red-600" to="to-red-300"/>
-                <p className="text-black">We are at the beginning of our mission to deliver fun and over 300 million players have already joined us</p>
-            </div>
-        </MotionDiv>)}
+  </div>
+
+    <div className="flex flex-col gap-20 lg:gap-44 lg:px-56">
+        {stats.map((stat, i) => <MotionGame index={i} key={`games-port ${i}`}/>)}
+
+
     </div>
   
   </div>

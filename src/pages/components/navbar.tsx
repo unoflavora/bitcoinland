@@ -67,7 +67,7 @@ export default function Navbar()
             animate={{y : isInView ? 0 : -slideDistance}}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className={`fixed flex flex-col w-full z-10`}>
-            <div className='flex w-full items-center px-5 md:py-3 lg:py-5 bg-blue-500 xl:px-24  justify-between'>
+            <div className='flex w-full items-center px-5 md:py-3 lg:py-5 bg-blue-500 lg:px-24  justify-between'>
             <h1 className="font-extrabold text-transparent text-2xl lg:text-4xl mb-1.5 bg-clip-text bg-gradient-to-r from-orange-300 to-green-400">
                 Company
             </h1>

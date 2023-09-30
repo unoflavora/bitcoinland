@@ -8,7 +8,7 @@ type contextType = {
 
 export const AppContext = createContext({} as contextType);
 
-export function AppState({children} : {children : ReactNode})
+export default function AppState({children} : {children : ReactNode})
 {
     const [showNav, setShowNav] = useState(false);
 
