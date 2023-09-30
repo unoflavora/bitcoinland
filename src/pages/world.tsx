@@ -45,7 +45,7 @@ export default function World()
     return <>
     
         <iframe ref={iframeRef} className={`w-full min-h-screen grow transition-all ${isPlaying ? "p-0 pt-0 md:rounded-b-0 pointer-events-auto z-[10000]" : "pt-12 pointer-events-none"} `}  
-            src='https://breezeinteractive.digital/test18/'></iframe>
+            src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
 
         <div className="absolute w-screen min-h-screen ">
             {finishLoad && !isPlaying && <button 
