@@ -13,7 +13,7 @@ export default function Index()
                 initial={{y: "-50%"}}
                 viewport={{once: true}}
                  className="w-full h-56 lg:h-64">
-            <TemplateImage/>
+                <TemplateImage/>
 
             </motion.div>
 
@@ -21,9 +21,9 @@ export default function Index()
                 whileInView={{y: 0}}
                 initial={{y: "50%"}}
                 viewport={{once: true}}
-                className="text-4xl lg:text-5xl flex flex-col gap-5 shrink grow-0">
-                <ColorizedText from="from-grey" to="to-gold" text={"Who you gonna call ?"}/>
-                <p className="text-base lg:text-xl text-black">
+                className="text-4xl lg:text-5xl flex flex-col gap-2">
+                <h1 className={"font-extrabold text-transparent mb-1.5 bg-clip-text bg-gradient-to-r py-2 from-grey to-gold "}>Who You gonna call?</h1>
+                    <p className="text-base lg:text-xl text-black">
                     Looking to make a media inquiry? Any feedback or sugestions? Fill out the form and we will get back to you!
                 </p>
             </motion.div>
