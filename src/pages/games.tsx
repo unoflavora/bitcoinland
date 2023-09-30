@@ -1,7 +1,5 @@
-import { motion } from "framer-motion";
 import MotionDiv from "./components/motionDiv";
 import ColorizedText from "./components/colorizedText";
-import { stat } from "fs";
 
 export default function Games()
 {
@@ -25,7 +23,7 @@ export default function Games()
 
     <div className="flex flex-col gap-5">
         {stats.map((stat, i) => <MotionDiv key={'stat' + i}>
-            <div className="py-10 px-5 flex flex-col gap-4 bg-gradient-to-b from-red-100 to-yellow-100 rounded-2xl">
+            <div className={`py-10 px-5 flex flex-col gap-4 bg-gradient-to-b from-red-100 to-yellow-100 rounded-2xl`}>
                 <ColorizedText text={"+500M Download"} from="from-red-600" to="to-red-300"/>
                 <p className="text-black">We are at the beginning of our mission to deliver fun and over 300 million players have already joined us</p>
             </div>
