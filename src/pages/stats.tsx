@@ -27,13 +27,13 @@ export default function Stats()
 ]
   return <div className="flex flex-col gap-20 lg:gap-44 px-5 py-5 md:px-10 xl:px-36">
 
-  <div className="flex flex-col max-md:gap-20 md:gap-10 md:flex-row lg:grid lg:grid-cols-3 place-content-center justify-center items-center">
+  <div className="flex flex-col max-md:gap-20 md:gap-10 md:flex-row justify-center items-center">
     <motion.div
        viewport={{once : true}}
        initial={{opacity: 0}}
        whileInView={{opacity: 1}}
-       className="flex justify-center w-full  h-auto">
-      <Image className="w-full" src="/company/logo.png" width={200} height={100} alt="company logo"/>
+       className="w-full">
+      <Image className="w-full " src="/company/logo.png" width={200} height={100} alt="company logo"/>
     </motion.div>
     <div className="lg:col-span-2">
     <MotionDiv>
@@ -51,7 +51,7 @@ export default function Stats()
 
 
    <MotionDiv>
-      <div className="flex flex-col xl:gap-10 w-full 2xl:px-44">
+      <div className="flex flex-col gap-10 w-full 2xl:px-44">
         <h1 className='text-4xl lg:text-7xl text-center font-bold 
           text-transparent  bg-clip-text bg-gradient-to-r from-gold to-gold py-2
           '>Understanding Bitcoin</h1>
@@ -70,7 +70,7 @@ export default function Stats()
 
         {stats.map((stat, i) => 
         <MotionDiv key={'stat' + i}>
-            <div className={`py-10 px-5 text-3xl lg:text-5xl 2xl:text-7xl lg:px-10 lg:p-24 lg:py-36 h-full flex flex-col gap-4 bg-gradient-to-b from-[#F5F5F5] to-[#F5F5F5] rounded-2xl`}>
+            <div className={`py-10 px-5 text-3xl  lg:px-10 lg:p-24 lg:py-36 h-full flex flex-col gap-4 bg-gradient-to-b from-[#F5F5F5] to-[#F5F5F5] rounded-2xl`}>
                 <ColorizedText text={stat.title} from={'from-black'} to={'to-black'}/>
                 <p className="text-black text-base lg:text-3xl">{stat.desc}</p>
             </div>
