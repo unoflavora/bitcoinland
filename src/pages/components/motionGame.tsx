@@ -10,7 +10,7 @@ export default function MotionGame(props: {index : number})
                 whileInView={{ opacity: 1, scale: 1 }}
                 initial={{ opacity: 0,scale: 0.6}}
                 transition={{duration: .2}}
-                className='h-40 md:w-full md:h-44 lg:h-fit aspect-square'
+                className='h-40 md:w-full md:h-auto aspect-square'
                 viewport={{once: true}}
             >
                 <TemplateImage/>
