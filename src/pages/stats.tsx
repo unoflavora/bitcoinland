@@ -19,47 +19,53 @@ export default function Stats()
     desc: "Since its public release in 2009, its value has risen abundantly. As of July 10th, 2023, the value of a single Bitcoin currency has climbed from its original value of $0 to $30,090.90"
   },
   {
-    title: "How is Bitcoin Ussd",
+    title: "How is Bitcoin Used",
     from : "from-blue-400",
     to: "to-grey-300",
     desc: "The Bitcoin transaction operates on a public decentralised ledger which makes it difﬁcult for those to falsify or reverse any transactions. As a form of digital currency, it operates by an individual owning a Bitcoin which can be distributed in smaller portions as payment for products. One Bitcoin can be divided up to eight decimal places, the smallest unit known as a satoshi. If this is accepted, Bitcoin can be divisible into more decimal places."
   }
 ]
-  return <div className="flex flex-col gap-20 px-5 py-5 md:px-10 lg:px-36">
+  return <div className="flex flex-col gap-20 lg:gap-44 px-5 py-5 md:px-10 xl:px-36">
 
-  <div className="flex flex-col gap-20 lg:flex-row">
+  <div className="flex flex-col max-md:gap-20 md:gap-10 md:flex-row lg:grid lg:grid-cols-3 place-content-center justify-center items-center">
     <motion.div
        viewport={{once : true}}
        initial={{opacity: 0}}
        whileInView={{opacity: 1}}
-       className="flex justify-center">
-      <Image src="/company/logo.png" width={200} height={100} alt="company logo"/>
+       className="flex justify-center w-full  h-auto">
+      <Image className="w-full" src="/company/logo.png" width={200} height={100} alt="company logo"/>
     </motion.div>
+    <div className="lg:col-span-2">
     <MotionDiv>
-          <h1 className='text-5xl lg:text-7xl text-center font-bold 
-          text-transparent  bg-clip-text bg-gradient-to-r from-black to-gold 
+          <h1 className='text-5xl lg:text-7xl text-center md:text-start font-bold 
+          text-transparent  bg-clip-text bg-gradient-to-r from-gold to-gold 
           '> Bitcoinland</h1>
-          <p className="text-black lg:text-3xl lg:px-36 ">
+          <p className="text-black lg:text-3xl md:text-start w-full "> 
           BitcoinLand is the brainchild of Rimaunangis $RXT. BitcoinLand.com was registered in 2011, with the vision of eventually creating a Bitcoin theme park or smart city, inspired by LegoLand.
           The idea for constructing the Bitcoin Iconic building and MasterplanCity came to live in 2023.
           </p>
     </MotionDiv>
+    </div>
+    
   </div>
 
 
    <MotionDiv>
+      <div className="flex flex-col xl:gap-10 w-full 2xl:px-44">
         <h1 className='text-4xl lg:text-7xl text-center font-bold 
-        text-transparent  bg-clip-text bg-gradient-to-r from-black to-gold py-2
-        '>Understanding Bitcoin</h1>
-        <p className="text-black lg:text-3xl lg:px-36">
-        BitcoinLand is the brainchild of Rimaunangis $RXT. BitcoinLand.com was registered in 2011, with the vision of eventually creating a Bitcoin theme park or smart city, inspired by LegoLand.
-         The idea for constructing the Bitcoin Iconic building and MasterplanCity came to live in 2023.
-        </p>
+          text-transparent  bg-clip-text bg-gradient-to-r from-gold to-gold py-2
+          '>Understanding Bitcoin</h1>
+          <p className="text-black lg:text-3xl lg:text-center ">
+          BitcoinLand is the brainchild of Rimaunangis $RXT. BitcoinLand.com was registered in 2011, with the vision of eventually creating a Bitcoin theme park or smart city, inspired by LegoLand.
+          The idea for constructing the Bitcoin Iconic building and MasterplanCity came to live in 2023.
+          </p>
+      </div>
+        
    </MotionDiv>
 
     <div className="flex flex-col gap-5 2xl:px-56">
     <h1 className='text-4xl lg:text-7xl text-center font-bold 
-        text-transparent  bg-clip-text bg-gradient-to-r from-black to-gold pb-5
+        text-transparent  bg-clip-text bg-gradient-to-r from-gold to-gold pb-5
         '>Innovating Bitcoin</h1>
 
         {stats.map((stat, i) => 
