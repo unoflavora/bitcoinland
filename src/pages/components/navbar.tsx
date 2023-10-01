@@ -67,7 +67,7 @@ export default function Navbar()
         <motion.nav 
             animate={{y : isInView ? 0 : -slideDistance}}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className={`fixed flex flex-col w-full z-10`}>
+            className={`fixed flex flex-col w-full z-20`}>
             <div className='flex w-full items-center px-5 md:py-3 lg:py-5 transition-all drop-shadow-sm shadow-[#00000026] bg-grey lg:px-24  justify-between'>
      
             <Link href="/" onClick={() =>setOpen(false)}  className='h-auto w-auto md:w-10 lg:w-14'>

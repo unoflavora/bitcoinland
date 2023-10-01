@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 import { useContext } from 'react'
 import { AppContext } from './state/state';
 import World from './world';
-import Games from './games';
+import EcoGlamping from './ecoGlamping';
 import PengkalanHulu from './pengkalanHulu';
 import Pangkor from './pangkor';
 import Mentagor from './mentagor';
@@ -22,7 +22,7 @@ export default function Home() {
         <div className='flex flex-col mt-10'>
           <Profile/>
           <Penang/>
-          <Games/>
+          <EcoGlamping/>
           <PengkalanHulu/>
           <Pangkor/>
           <Mentagor/>

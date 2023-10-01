@@ -1,10 +1,10 @@
 import MotionDiv from "./components/motionDiv";
 import ColorizedText from "./components/colorizedText";
-import MotionGame from "./components/motionGame";
+import MotionImageDesc from "./components/motionImageDesc";
 import Image from "next/image";
 import {easeInOut, motion} from 'framer-motion';
 
-export default function Games()
+export default function EcoGlamping()
 {
   const glamping = [{
     imageUrl: "/graphics/premium-chalets.png",
@@ -28,8 +28,14 @@ export default function Games()
     desc: "These accommodations are perched among the treetops, offering panoramic views of the surrounding landscape. These chalets often incorporate eco-conscious features such as energy-efficient design, use of sustainable materials that has a minimal environmental impact.",
   },
 ]
-  return <div className="flex flex-col  gap-10 lg:gap-20 px-5 py-20 md:pb-20 md:px-16 ">
-  <div className="w-full 2xl:px-56 md:w-[70%]">
+  return <div className=" overflow-hidden flex flex-col  gap-10 lg:gap-20 py-20 md:pb-20 px-5 md:px-16 lg:px-36 ">
+
+
+  <div className="relative w-full 2xl:px-56 md:w-[70%]">
+  <div className="absolute flex  z-0 max-lg:left-0 lg:right-0 max-lg:-top-20 opacity-30 -top-0">
+    <Image className="md:w-56 " src={"/graphics/tree_big.svg"} width={125} height={100} alt="coin decoration"/>
+    <Image className="max-sm:hidden" src={"/graphics/tree_smaller.svg"} width={80} height={100} alt="coin decoration"/>
+  </div>
   <MotionDiv>
         <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold'> Eco Glamping</h1>
    </MotionDiv>
@@ -37,7 +43,7 @@ export default function Games()
   </div>
 
     <div className="flex flex-col gap-20 lg:gap-44 2xl:px-56 ">
-        {glamping.map((stat, i) => <MotionGame index={i} desc={stat.desc} title={stat.title} from={stat.from} to={stat.to} imageUrl={stat.imageUrl} key={`games-port ${i}`}/>)}
+        {glamping.map((stat, i) => <MotionImageDesc index={i} desc={stat.desc} title={stat.title} from={stat.from} to={stat.to} imageUrl={stat.imageUrl} key={`games-port ${i}`}/>)}
     </div>
 
     <motion.div 

@@ -7,14 +7,21 @@ import MotionDiv from "./components/motionDiv";
 export default function PengkalanHulu()
 {
 
-    return <div className="flex flex-col px-5 md:px-16 lg:px-36 xl:px-56 gap-10  bg-[#F5F5F5] py-20 xl:py-20">
+    return <div className="relative w-full bg-[#F5F5F5]">
+        <div className="absolute flex z-0 left-0 max-md:opacity-30 top-5">
+            <Image className="lg:w-96  scale-x-[-1]" src={"/graphics/elephant.svg"} width={200} height={100} alt="coin decoration"/>
+        </div>
+        <Image className="absolute bottom-0 right-0 max-sm:hidden" src={"/graphics/elephant.svg"} width={200} height={100} alt="coin decoration"/>
+
+
+        <div className="w-full flex flex-col px-5 md:px-16 lg:px-36  gap-10   py-20 xl:py-20">
         <div className="flex flex-col gap-1 lg:gap-10 w-full justify-center items-center">
             <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-center font-bold'>Pengkalan Hulu</h1>
             <h2 className="text-gold text-xl lg:text-3xl ">Bitcoin Elephant Sanctuary</h2>
         </div>
 
         <MotionDiv>
-            <Image className="w-full" src="/graphics/pengkalan-hulu.png" width={900} height={500} alt="map of pengkalan hulu"/>
+            <Image className="w-full rounded-2xl" src="/graphics/pengkalan-hulu.png" width={900} height={500} alt="map of pengkalan hulu"/>
         </MotionDiv>
 
         <div className="flex flex-col md:grid md:grid-cols-3 gap-10 lg:text-lg xl:text-xl text-black">
@@ -51,5 +58,7 @@ export default function PengkalanHulu()
             Explore a world of leisure with diverse retail outlets, comfortable hotel accommodations, and a lush fruit orchard garden. This symphony of cultural fusion, environmental stewardship, and modern amenities creates a haven for discerning travellers, offering an enriching tapestry of experiences in this enchanting region.
             </p>
         </div>
+        </div>
+        
     </div>
 }
