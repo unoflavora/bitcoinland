@@ -1,5 +1,5 @@
-import MotionDiv from "./components/motionDiv";
-import ColorizedText from "./components/colorizedText";
+import MotionDiv from "../components/motionDiv";
+import ColorizedText from "../components/colorizedText";
 import {motion} from 'framer-motion';
 import Image from "next/image";
 
@@ -25,13 +25,10 @@ export default function About()
     desc: "The Bitcoin transaction operates on a public decentralised ledger which makes it difﬁcult for those to falsify or reverse any transactions. As a form of digital currency, it operates by an individual owning a Bitcoin which can be distributed in smaller portions as payment for products. One Bitcoin can be divided up to eight decimal places, the smallest unit known as a satoshi. If this is accepted, Bitcoin can be divisible into more decimal places."
   }
 ]
-  return <div className="flex flex-col justify-center items-center gap-20 lg:gap-10 px-5 py-5 lg:py-20 md:px-10 xl:px-64">
-
- 
-
+  return <div className="flex flex-col justify-center items-center gap-20 lg:gap-10 py-5 lg:py-20 px-5 md:px-10 xl:px-64">
 
    <MotionDiv>
-      <div className="flex flex-col gap-10 w-full 2xl:px-44 ">
+      <div className="flex flex-col gap-10 w-full ">
         <h1 className='text-4xl text-center font-bold 
           text-transparent  bg-clip-text bg-gradient-to-r from-gold to-gold py-2
           '>Understanding Bitcoin</h1>
@@ -43,7 +40,7 @@ export default function About()
         
    </MotionDiv>
 
-    <div className="flex flex-col gap-5 2xl:px-56">
+    <div className="flex flex-col gap-5 ">
     <h1 className='text-4xl text-center font-bold 
         text-transparent  bg-clip-text bg-gradient-to-r from-gold to-gold pb-5
         '>Innovating Bitcoin</h1>
