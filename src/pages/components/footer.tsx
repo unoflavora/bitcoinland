@@ -17,16 +17,16 @@ export default function Footer()
                         {title: 'Facebook', url : 'https://www.facebook.com/people/Rimaunangis-Capital-LTD/100084889096948/'}, 
                         {title: 'Youtube', url : 'https://www.youtube.com/@rimaunangisdigitalllc3198'}, 
                         {title: 'Tiktok', url : 'https://www.tiktok.com/@rxt_token?_t=8eiiaawuxva&_r=1'}].map((logo, i) => 
-                            <Link key={`social logo ${logo}`} href={logo.url}>
+                            <Link className="hover:scale-110" key={`social logo ${logo}`} href={logo.url}>
                                 <Image src={`/icons/${logo.title}.svg`} width={40} height={30} alt={`social logo ${logo}`}/>
                             </Link>
                         )}
                 </div>
 
                 <div className="flex gap-8 lg:text-lg font-semibold">
-                    <Link href="/">Home</Link>
-                    <Link href="/">Our Story</Link>
-                    <Link href="/">Contact Us</Link>
+                    <Link className="hover:scale-110" href="/">Home</Link>
+                    <Link className="hover:scale-110" href="/story">Our Story</Link>
+                    <Link className="hover:scale-110" href="/contact">Contact Us</Link>
 
                 </div>
             </div>

@@ -78,15 +78,15 @@ export default function Navbar()
             <div className='md:hidden flex h-full justify-center'>
                 <Hamburger toggled={isOpen} toggle={setOpen} rounded distance='lg' color="white" size={28} direction='left'/>
             </div>
-            <ul className='max-sm:hidden flex gap-10 items-center lg:text-2xl'>
+            <ul className='max-sm:hidden flex gap-10 items-center lg:text-2xl font-semibold '>
                 {links.map((title, i) => 
-                <Link  onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "/story" : "/"}`} key={"link " + i}>
+                <Link className='hover:scale-110'  onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "/story" : "/"}`} key={"link " + i}>
                     {title}
                 </Link>)}
 
                 <Link 
                     href="/contact"
-                    className={`p-2 px-4  rounded-md  bg-gold text-center text-white`}
+                    className={`p-2 px-4 hover:scale-110 rounded-md  bg-gold text-center text-white`}
                     >
                     Contact Us
                 </Link>
