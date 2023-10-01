@@ -1,3 +1,4 @@
+import Image from "next/image"
 export default function Token()
 {
     return <div
@@ -9,13 +10,12 @@ export default function Token()
                 Token Information
             </h1>
 
-            <div className="flex flex-col gap-8 md:flex-row">
-                <img
-                src="https://file.rendit.io/n/sOH9Ao1RHMokIUbhj6Xv.png"
-                id="Picture"
-                className=""
-                />
-                <div className="self-stretch flex flex-col gap-3 items-start mx-1">
+            <div className="flex flex-col gap-8 md:flex-row justify-center items-center">
+                <div className="bg-black p-8 rounded-xl w-full flex justify-center items-center">
+                <Image className="w-full h-full" src="/company/token.png" width={500} height={1000} alt="token"/>
+
+                </div>
+                <div className=" flex flex-col gap-3 items-start mx-1">
                     <div className="text-2xl font-bold tracking-[-0.84] leading-[32px] text-[#161a1d]">
                         $RXT TOKEN
                     </div>
