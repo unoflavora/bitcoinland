@@ -1,8 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
-
 import Image from "next/image";
-
-/* eslint-disable jsx-a11y/alt-text */
 export default function Pangkor()
 {
 
@@ -24,7 +20,7 @@ export default function Pangkor()
             Pulau Mentagor stands as an island situated off the shores of Pulau Pangkor in the state of Perak. Positioned along the western coast, it takes the second spot as the largest among the outlying islands, trailing only behind Pangkor Laut. 
                 <br/>
                 <br/>
-            Visitors are presented with a variety of upscale facilities and experiences within this picturesque environment. The envisioned design beautifully combines luxury and environmental responsibility, as the architectural components harmoniously integrate with the island's delicate ecosystem.            </p>
+            Visitors are presented with a variety of upscale facilities and experiences within this picturesque environment. The envisioned design beautifully combines luxury and environmental responsibility, as the architectural components harmoniously integrate with the island&apos;s delicate ecosystem.            </p>
 
                <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
