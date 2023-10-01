@@ -2,6 +2,7 @@ import { IframeHTMLAttributes, useContext, useEffect, useRef, useState } from "r
 import { AppContext } from "./state/state";
 import {motion} from 'framer-motion';
 import Button from "./components/button";
+import Div100vh from 'react-div-100vh'
 
 export default function World()
 {
@@ -51,19 +52,20 @@ export default function World()
     }, [])
     return <>
     
-        
-        <iframe ref={iframeRef} className={`w-full min-h-[100vh] grow transition-transform ${isPlaying || !readyToPlay ? "translate-y-0 md:rounded-b-0 z-[10000] pointer-events-auto" : "translate-y-12 xl:translate-y-24 pointer-events-none"} `}  
-            src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
+        <Div100vh>
+            <iframe ref={iframeRef} className={`w-full h-full grow transition-transform ${isPlaying || !readyToPlay ? "translate-y-0 md:rounded-b-0 z-[10000] pointer-events-auto" : "translate-y-12 xl:translate-y-24 pointer-events-none"} `}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
+        </Div100vh>
 
-                {
-                <motion.div 
-                    animate={{opacity: readyToPlay && !isPlaying ? 1 : 0}}
-                    transition={{delay: 1.25}}
-                    onClick={onClickPlay} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
-                <Button>
-                    Enter the Bitcoinland
-                </Button>
-                </motion.div>}     
+        { readyToPlay &&
+            <motion.div 
+                animate={{opacity: readyToPlay && !isPlaying ? 1 : 0}}
+                transition={{delay: 1.25}}
+                onClick={onClickPlay} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
+            <Button>
+                Enter the Bitcoinland
+            </Button>
+            </motion.div>
+        }     
        
         
     </>
