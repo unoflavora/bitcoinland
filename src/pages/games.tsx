@@ -31,7 +31,7 @@ export default function Games()
   return <div className="flex flex-col  gap-10 lg:gap-20 px-5 py-5 md:pb-20 md:px-10 ">
   <div className="w-full 2xl:px-56 md:w-[70%]">
   <MotionDiv>
-        <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold '> Eco Glamping</h1>
+        <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold'> Eco Glamping</h1>
    </MotionDiv>
 
   </div>

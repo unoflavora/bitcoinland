@@ -1,17 +1,32 @@
-import Image from "next/image";
+import {motion} from 'framer-motion';
+import Image from 'next/image';
+import MotionDiv from './components/motionDiv';
 export default function Pangkor()
 {
 
     return <div className="flex flex-col px-5 lg:px-36 gap-10 ">
+
+        <MotionDiv>
         <div className="flex flex-col gap-1 w-full justify-center items-center">
-            <h1 className="text-gold text-3xl lg:text-7xl font-bold">Pangkor</h1>
+            <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold'>Pangkor</h1>
             <h2 className="text-gold text-xl lg:text-3xl ">Bitcoin Exotic Island</h2>
         </div>
 
+        </MotionDiv>
+       
 
+
+     
         <div className="flex flex-col md:grid md:grid-cols-2 gap-5 lg:text-lg xl:text-xl text-black">
-            <div className="flex flex-col gap-4">
-                <div className="flex flex-col gap-2">
+
+        <motion.div 
+            initial={{opacity: 0}}
+            whileInView={{opacity: 1}}
+            viewport={{once: true}}
+            transition={{duration: 1}}
+            className="flex flex-col gap-4"
+        >
+             <div className="flex flex-col gap-2">
                     <h3 className="text-4xl font-bold">Pangkalan Bitcoin Exotic Island</h3>
                     <div id='line' className="w-1/4 bg-gold h-1"/> 
                 </div>
@@ -39,8 +54,13 @@ export default function Pangkor()
                     <p>Bitcoin Exotic Island, Mentagor, Pangkor</p>
                 </div>
             </div>
-            </div>
-            <Image className="w-full h-full rounded-xl" src="/graphics/pangkor.png" width={900} height={500} alt="map of pangkor"/>
+        </motion.div>
+
+
+            <MotionDiv>
+                <Image className="w-full h-full rounded-xl" src="/graphics/pangkor.png" width={900} height={500} alt="map of pangkor"/>
+
+            </MotionDiv>
 
 
         

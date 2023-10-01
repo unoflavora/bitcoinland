@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Image from "next/image";
+import MotionDiv from "./components/motionDiv";
 
 /* eslint-disable jsx-a11y/alt-text */
 export default function PengkalanHulu()
@@ -8,11 +9,13 @@ export default function PengkalanHulu()
 
     return <div className="flex flex-col px-5 lg:px-36 xl:px-56 gap-10 bg-[#F5F5F5] py-10 xl:py-20">
         <div className="flex flex-col gap-1 w-full justify-center items-center">
-            <h1 className="text-gold text-3xl lg:text-7xl font-bold">Pengkalan Hulu</h1>
+            <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-center font-bold'>Pengkalan Hulu</h1>
             <h2 className="text-gold text-xl lg:text-3xl ">Bitcoin Elephant Sanctuary</h2>
         </div>
 
-        <Image className="w-full" src="/graphics/pengkalan-hulu.png" width={900} height={500} alt="map of pengkalan hulu"/>
+        <MotionDiv>
+            <Image className="w-full" src="/graphics/pengkalan-hulu.png" width={900} height={500} alt="map of pengkalan hulu"/>
+        </MotionDiv>
 
         <div className="flex flex-col md:grid md:grid-cols-3 gap-10 lg:text-lg xl:text-xl text-black">
             <div className="flex flex-col gap-4">

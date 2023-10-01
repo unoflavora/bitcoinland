@@ -1,14 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Image from "next/image";
+import MotionDiv from "./components/motionDiv";
 
 /* eslint-disable jsx-a11y/alt-text */
 export default function Mentagor()
 {
 
-    return <div className="flex flex-col justify-center items-center px-5 lg:px-36 xl:px-56 gap-10 lg:gap-24 bg-[#F5F5F5] py-10">
+    return <MotionDiv>
+   <div className="flex flex-col justify-center items-center px-5 lg:px-36 xl:px-56 gap-10 lg:gap-24 bg-[#F5F5F5] py-10">
         
-        <h1 className="text-gold text-3xl lg:text-7xl font-bold text-center">Mentagor Island</h1>
+        <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-center font-bold'>Mentagor Island</h1>
 
 
         <div className="w-full flex flex-col 2xl:flex-row gap-5 lg:gap-20 justify-center items-center  ">
@@ -21,4 +23,6 @@ export default function Mentagor()
         </div>
 
     </div>
+    </MotionDiv>
+     
 }
