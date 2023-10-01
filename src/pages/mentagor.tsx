@@ -8,7 +8,7 @@ export default function Mentagor()
 {
 
     return <MotionDiv>
-   <div className="flex flex-col justify-center items-center px-5 lg:px-36 xl:px-56 gap-10 lg:gap-24 bg-[#F5F5F5] py-10">
+   <div className="flex flex-col justify-center items-center px-5 lg:px-36 xl:px-56 gap-10 lg:gap-24 bg-[#F5F5F5] py-20">
         
         <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-center font-bold'>Mentagor Island</h1>
 

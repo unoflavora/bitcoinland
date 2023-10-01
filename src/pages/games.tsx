@@ -9,8 +9,8 @@ export default function Games()
   const glamping = [{
     imageUrl: "/graphics/premium-chalets.png",
     title: "Eco Premium Chalets",
-    from : "from-green-500",
-    to: "to-green-200",
+    from : "from-gold",
+    to: "to-black",
     desc: "Chalets built in a forest overlooking a beach and the sea offer a captivating and serene retreat. These accommodations provide a harmonious blend of natural beauty and comfort. Imagine staying in a cozy chalet nestled among the trees, with the tranquil ambiance of the forest and the breathtaking view of the beach and sea just a gaze away. Such a setting allows for a peaceful escape, where visitors can enjoy the sights and sounds of nature while also indulging in the relaxing atmosphere of a seaside getaway."
   },
   {
@@ -23,12 +23,12 @@ export default function Games()
   {
     imageUrl: "/graphics/eco-tree-top.png",
     title: "Eco-‘Tree-Top’ Premium Chalets",
-    from : "from-blue-500",
-    to: "to-green-100",
+    from : "from-gold",
+    to: "to-black",
     desc: "These accommodations are perched among the treetops, offering panoramic views of the surrounding landscape. These chalets often incorporate eco-conscious features such as energy-efficient design, use of sustainable materials that has a minimal environmental impact.",
   },
 ]
-  return <div className="flex flex-col  gap-10 lg:gap-20 px-5 py-5 md:pb-20 md:px-10 ">
+  return <div className="flex flex-col  gap-10 lg:gap-20 px-5 py-20 md:pb-20 md:px-16 ">
   <div className="w-full 2xl:px-56 md:w-[70%]">
   <MotionDiv>
         <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold'> Eco Glamping</h1>

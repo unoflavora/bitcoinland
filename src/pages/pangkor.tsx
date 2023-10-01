@@ -4,10 +4,10 @@ import MotionDiv from './components/motionDiv';
 export default function Pangkor()
 {
 
-    return <div className="flex flex-col px-5 lg:px-36 gap-10 ">
+    return <div className="flex flex-col px-5 md:px-16 lg:px-36 py-20 gap-10 ">
 
         <MotionDiv>
-        <div className="flex flex-col gap-1 w-full justify-center items-center">
+        <div className="flex flex-col gap-1 lg:gap-10  w-full justify-center items-center">
             <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold'>Pangkor</h1>
             <h2 className="text-gold text-xl lg:text-3xl ">Bitcoin Exotic Island</h2>
         </div>
@@ -17,7 +17,7 @@ export default function Pangkor()
 
 
      
-        <div className="flex flex-col md:grid md:grid-cols-2 gap-5 lg:text-lg xl:text-xl text-black">
+        <div className="flex flex-col-reverse lg:grid md:grid-cols-2 gap-5 lg:text-lg xl:text-xl text-black">
 
         <motion.div 
             initial={{opacity: 0}}

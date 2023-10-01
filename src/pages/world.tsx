@@ -33,14 +33,14 @@ export default function World()
                 setFinishLoad(true)
            }
 
-           if(e.data === "closeScene" || e.data === "ExitScene")
+           if(e.data === "closeScene" || e.data === "exitScene")
            {
             console.log(e.data)
             setIsPlaying(false)
             setShowNav(true)
            }
 
-        })
+        }, )
     }, [])
     return <>
     

@@ -7,8 +7,8 @@ import MotionDiv from "./components/motionDiv";
 export default function PengkalanHulu()
 {
 
-    return <div className="flex flex-col px-5 lg:px-36 xl:px-56 gap-10 bg-[#F5F5F5] py-10 xl:py-20">
-        <div className="flex flex-col gap-1 w-full justify-center items-center">
+    return <div className="flex flex-col px-5 md:px-16 lg:px-36 xl:px-56 gap-10  bg-[#F5F5F5] py-20 xl:py-20">
+        <div className="flex flex-col gap-1 lg:gap-10 w-full justify-center items-center">
             <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-center font-bold'>Pengkalan Hulu</h1>
             <h2 className="text-gold text-xl lg:text-3xl ">Bitcoin Elephant Sanctuary</h2>
         </div>
