@@ -9,7 +9,9 @@ export default function World()
 
     const {showNav, setShowNav} = useContext(AppContext);
 
-    const [finishLoad, setFinishLoad] = useState(false);
+    const [readyToPlay, setRoadyToPlay] = useState(false);
+
+    const [isLoading, setIsLoading] = useState(true);
 
     const iframeRef = useRef<any>();
 
@@ -28,33 +30,40 @@ export default function World()
     useEffect(() => {
         window.addEventListener('message', (e) => {
             console.log("POST MESSAGE RECEIVE: " + e.data)
-           if(e.data === "startScene" )
-           {
-                setFinishLoad(true)
-           }
 
-           if(e.data === "closeScene" || e.data === "exitScene")
-           {
-            console.log(e.data)
-            setIsPlaying(false)
-            setShowNav(true)
-           }
+            if(e.data === "finishInitialLoading")
+            {
+                setIsLoading(false);
+            }
+            if(e.data === "startScene" )
+            {
+                setRoadyToPlay(true)
+            }
+
+            if(e.data === "closeScene" || e.data === "exitScene")
+            {
+                console.log(e.data)
+                setIsPlaying(false)
+                setShowNav(true)
+            }
 
         }, )
     }, [])
     return <>
     
         
-        <iframe ref={iframeRef} className={`w-full min-h-[96dvh] grow transition-transform ${isPlaying ? "translate-y-0 md:rounded-b-0 pointer-events-auto z-[10000]" : "translate-y-12 xl:translate-y-24 pointer-events-none"} `}  
+        <iframe ref={iframeRef} className={`w-full min-h-[100vh] grow transition-transform ${isPlaying || !readyToPlay ? "translate-y-0 md:rounded-b-0 z-[10000] pointer-events-auto" : "translate-y-12 xl:translate-y-24 pointer-events-none"} `}  
             src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
 
-                {finishLoad && !isPlaying && <button 
-                
-                onClick={onClickPlay} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
+                {
+                <motion.div 
+                    animate={{opacity: readyToPlay && !isPlaying ? 1 : 0}}
+                    transition={{delay: 1.25}}
+                    onClick={onClickPlay} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
                 <Button>
                     Enter the Bitcoinland
                 </Button>
-                </button>}     
+                </motion.div>}     
        
         
     </>

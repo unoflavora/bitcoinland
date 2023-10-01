@@ -80,7 +80,7 @@ export default function Navbar()
             </div>
             <ul className='max-sm:hidden flex gap-10 items-center lg:text-2xl font-semibold '>
                 {links.map((title, i) => 
-                <Link className='hover:scale-110'  onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "/story" : "/"}`} key={"link " + i}>
+                <Link className='hover:scale-110'  onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "story" : ""}`} key={"link " + i}>
                     {title}
                 </Link>)}
 
@@ -101,7 +101,7 @@ export default function Navbar()
                 className={`absolute translate-x-full flex flex-col top-12 text-3xl gap-10  bg-grey text-white b min-h-screen w-screen py-10 px-5 z-10`}>
 
                 {links.map((title, i) => 
-                <Link onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "/story" : "/"}`} key={"link " + i}>
+                <Link onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "story" : ""}`} key={"link " + i}>
                     <motion.li 
                         animate={{x: isOpen ? 0 : "200%"}}
                         transition={{delay : .1 * i, duration: .35}}
