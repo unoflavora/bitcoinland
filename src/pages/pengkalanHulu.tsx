@@ -27,7 +27,7 @@ export default function PengkalanHulu()
         <div className="flex flex-col md:grid md:grid-cols-3 gap-10 lg:text-lg xl:text-xl text-black">
             <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-2">
-                    <h3 className="text-4xl font-bold">Pangkalan Hulu Butcoin Elephant Sanctuary</h3>
+                    <h3 className="text-4xl font-bold">Pangkalan Hulu Bitcoin Elephant Sanctuary</h3>
                     <div id='line' className="w-1/4 bg-gold h-1"/> 
                 </div>
 
