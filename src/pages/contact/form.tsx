@@ -2,6 +2,11 @@ import Button from "../components/button";
 
 import {Field, Formik} from "formik"
 
+declare var process : {
+    env: {
+      DB_ACCESS_TOKEN: string
+    }
+  }
 export default function Form()
 {
     const formStyle = "border border-gray-200 rounded-md p-2";
@@ -30,11 +35,27 @@ export default function Form()
                     return errors;
                 }}
                 onSubmit={(values, { setSubmitting }) => {
-                    setTimeout(() => {
-                        alert(JSON.stringify(values, null, 2));
-                        setSubmitting(false);
-                    }, 400);
-
+                    fetch('https://sheetdb.io/api/v1/oa2a8zjtbf60l', {
+                        method: 'POST',
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json',
+                            'Authentication': 'Bearer ' + process.env.DB_ACCESS_TOKEN
+                        },
+                        body: JSON.stringify({
+                            data: [
+                                {
+                                    'email': values.email,
+                                    'subject': values.subject,
+                                    'category': values.category,
+                                    'message': values.message
+                                }
+                            ]
+                            })
+                        })
+                        .then((response) => console.log(process.env.DB_ACCESS_TOKEN))
+                        .then((data) => alert("Succesfully sent data"));
+                    console.log(JSON.stringify(values))
                 }}
             >
                 {({values, errors, touched, handleChange, handleBlur, handleSubmit, isSubmitting}) => 
@@ -77,8 +98,8 @@ export default function Form()
                     
 
                         <div className={formDivClass}>
-                            <label htmlFor="pesan">Message*</label>
-                            <Field onChange={handleChange} onBlur={handleBlur} value={values.message} className={formStyle + " h-24 lg:h-48"} name="pesan" as="textarea"/>
+                            <label htmlFor="message">Message*</label>
+                            <Field onChange={handleChange} onBlur={handleBlur} value={values.message} className={formStyle + " h-24 lg:h-48"} name="message" as="textarea"/>
                             <p className="text-red-500">{errors.message && touched.message && errors.message}</p>
                         </div>
 
