@@ -45,7 +45,7 @@ export default function World()
     return <>
     
         
-        <iframe ref={iframeRef} className={`w-full min-h-[100dvh] grow transition-all ${isPlaying ? "p-0 mt-0 md:rounded-b-0 pointer-events-auto z-[10000]" : "mt-12 pointer-events-none"} `}  
+        <iframe ref={iframeRef} className={`w-full min-h-[100dvh] grow transition-transform ${isPlaying ? "translate-y-0 md:rounded-b-0 pointer-events-auto z-[10000]" : "translate-y-12 xl:translate-y-24 pointer-events-none"} `}  
             src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
 
                 {finishLoad && !isPlaying && <button 
