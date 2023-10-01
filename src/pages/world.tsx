@@ -59,7 +59,7 @@ export default function World()
         { readyToPlay &&
             <motion.div 
                 animate={{opacity: readyToPlay && !isPlaying ? 1 : 0}}
-                transition={{delay: 1.25}}
+                transition={{delay: readyToPlay ? 1.25 : 0}}
                 onClick={onClickPlay} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
             <Button>
                 Enter the Bitcoinland
