@@ -7,6 +7,7 @@ import Games from './games';
 import PengkalanHulu from './pengkalanHulu';
 import Pangkor from './pangkor';
 import Mentagor from './mentagor';
+import Penang from './penang';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function Home() {
     <div className={`flex flex-col gap-20 ${showNav ? "" : "my-0"} transition-all ${inter.className}`}>
         <World/>
         <Stats/>
+        <Penang/>
         <Games/>
         <PengkalanHulu/>
         <Pangkor/>
