@@ -9,9 +9,18 @@ export default function Footer()
             <Image className="h-20 lg:h-24 w-fit aspect-square" src="/icon.png" width={500} height={500} alt="company-logo"/>
             
 
-            <div className="flex flex-col justify-center items-center gap-7">
-                <div className="flex lg:justify-between lg:w-full lg:px-10 gap-8">
-                    {['discord', 'instagram', 'linkedin', 'twitter'].map((logo, i) => <Image key={`social logo ${logo}`} src={`/icons/${logo}.svg`} width={30} height={30} alt={`social logo ${logo}`}/>)}
+            <div className="flex flex-col justify-center items-center lg:justify-end lg:items-end gap-7">
+                <div className="flex  lg:w-full lg:justify-end  gap-8">
+                    {[
+                        {title: 'Instagram', url : 'https://www.instagram.com/rxt_token'}, 
+                        {title: 'Twitter', url : 'https://twitter.com/RimaunangisRXT'}, 
+                        {title: 'Facebook', url : 'https://www.facebook.com/people/Rimaunangis-Capital-LTD/100084889096948/'}, 
+                        {title: 'Youtube', url : 'https://www.youtube.com/@rimaunangisdigitalllc3198'}, 
+                        {title: 'Tiktok', url : 'https://www.tiktok.com/@rxt_token?_t=8eiiaawuxva&_r=1'}].map((logo, i) => 
+                            <Link key={`social logo ${logo}`} href={logo.url}>
+                                <Image src={`/icons/${logo.title}.svg`} width={40} height={30} alt={`social logo ${logo}`}/>
+                            </Link>
+                        )}
                 </div>
 
                 <div className="flex gap-8 lg:text-lg font-semibold">
@@ -28,8 +37,5 @@ export default function Footer()
         <div className="w-full text-center border-t-2 text-xs">
             <p className="pt-2">© 2023 Bitcoinland. All rights reserved.</p>
         </div>
-
-
-  
   </div>
 }
