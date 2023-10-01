@@ -1,5 +1,5 @@
 import Image from "next/image";
-import {motion} from 'framer-motion';
+import {easeInOut, motion} from 'framer-motion';
 import MotionDiv from "./components/motionDiv";
 import Title from "./title";
 
@@ -31,7 +31,7 @@ export default function Penang()
                     </div>
                 </MotionDiv>
                 <motion.div
-                    transition={{ease: [.22,.2,.01,1.37], duration: 1}}
+                    transition={{ease: easeInOut, duration: .5}}
                     initial={{scale: 0}}
                     whileInView={{scale: 1}}
                     viewport={{once : true}}
@@ -53,7 +53,7 @@ export default function Penang()
                 </MotionDiv>
 
                 <motion.div
-                    transition={{ease: [.22,.2,.01,1.37], duration: 1}}
+                    transition={{ease: easeInOut, duration: 1}}
                     initial={{scale: 0}}
                     whileInView={{scale: 1}}
                     viewport={{once : true}}
