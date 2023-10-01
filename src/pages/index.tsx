@@ -5,6 +5,7 @@ import World from './world';
 import Stats from './stats';
 import Games from './games';
 import PengkalanHulu from './pengkalanHulu';
+import Pangkor from './pangkor';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Stats/>
         <Games/>
         <PengkalanHulu/>
+        <Pangkor/>
     </div>
   )
 }

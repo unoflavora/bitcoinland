@@ -21,8 +21,10 @@ export default function MotionGame(props: {index : number, title: string, desc: 
                     initial={{ opacity: 0,scale: 0.6}}
                     transition={{duration: .2, delay: .3}}
                     viewport={{once: true}}
-                    className='text-4xl lg:text-6xl flex flex-col gap-10'>
+                    className='text-4xl lg:text-6xl flex flex-col gap-5'>
+                    <div className='flex flex-col gap-2'>
                     <ColorizedText text={props.title} from={props.from} to={props.to}/>
+
                     <motion.div 
                     whileInView={{ opacity: 1, scale: 1 }}
                     initial={{ opacity: 0,scale: 0.6}}
@@ -31,6 +33,8 @@ export default function MotionGame(props: {index : number, title: string, desc: 
                     className={`w-1/4  h-1 bg-gold`}>
                     
                     </motion.div>
+                    </div>
+
                     <p className='text-base lg:text-2xl text-black'>{props.desc}</p>
                 </motion.div>
                 </div>
