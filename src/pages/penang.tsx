@@ -15,15 +15,16 @@ export default function Penang()
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 viewport={{once : true}} 
-                className="relative text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold tracking-[-1.46] leading-[52px] self-center">
+                className="relative text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold tracking-[-1.46] leading-[52px] self-start">
                 Bitcoin Penang
                
             </motion.h1>
             <div className="relative flex flex-col gap-6 items-start mx-1 ">
-                <div className="absolute flex flex-col z-0 -right-20 -top-40">
-                    <Image src={"/graphics/coin1.svg"} width={150} height={100} alt="coin decoration"/>
-                    <Image className="max-sm:hidden" src={"/graphics/coin2.svg"} width={100} height={100} alt="coin decoration"/>
-                </div>
+            <div className="absolute flex flex-col z-0 -right-20 -top-10">
+                        <Image src={"/graphics/coin1.svg"} width={150} height={100} alt="coin decoration"/>
+                        <Image className="" src={"/graphics/coin2.svg"} width={100} height={100} alt="coin decoration"/>
+                     </div>
+
                 <MotionDiv>
                     <div className="text-2xl font-bold tracking-[-0.84] z-10 leading-[32px] text-[#161a1d]">
                     Penang Bitcoin Landmark
@@ -36,9 +37,9 @@ export default function Penang()
                     viewport={{once : true}}
                     className="relative "
                 >
-                    <Image className="z-20" src={"/graphics/bitcoinland2.png"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
 
-                  
+
+                <Image className="z-20" src={"/graphics/bitcoinland2.png"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
 
                 </motion.div>
             </div>

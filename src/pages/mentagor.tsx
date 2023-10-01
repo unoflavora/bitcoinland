@@ -9,8 +9,8 @@ export default function Mentagor()
 
     return <MotionDiv>
     <div className="relative overflow-y-hidden flex flex-col justify-center items-center px-5 lg:px-36 xl:px-56 gap-10 lg:gap-24 bg-[#F5F5F5] py-20">
-        <Image className="absolute -bottom-20 md:top-5 right-0 z-0 lg:w-96" src={"/graphics/mentagor.svg"} width={200} height={100} alt="coin decoration"/>
-        <Image className="absolute max-md:top-0 md:-bottom-20 left-0 z-0 scale-x-[-1] lg:w-64" src={"/graphics/mentagor.svg"} width={200} height={100} alt="coin decoration"/>
+        <Image className="absolute -bottom-20  md:top-5 right-0 z-0 lg:w-96" src={"/graphics/mentagor.svg"} width={200} height={100} alt="coin decoration"/>
+        <Image className="absolute max-md:top-0 w-36 md:-bottom-20 left-0 z-0 scale-x-[-1] lg:w-64" src={"/graphics/mentagor.svg"} width={200} height={100} alt="coin decoration"/>
 
         <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-center font-bold'>Mentagor Island</h1>
 
