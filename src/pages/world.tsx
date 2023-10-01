@@ -53,7 +53,7 @@ export default function World()
     return <>
     
         <Div100vh className={`grow transition-transform ${isPlaying || !readyToPlay ? "translate-y-0 md:rounded-b-0 z-[10000] pointer-events-auto" : "translate-y-12 xl:translate-y-24 pointer-events-none"}`}>
-            <iframe ref={iframeRef} className={`w-full h-full`}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland_2/index.html'></iframe>
+            <iframe ref={iframeRef} className={`w-full h-full`}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
         </Div100vh>
 
         { readyToPlay &&
