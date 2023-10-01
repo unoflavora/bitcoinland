@@ -12,7 +12,7 @@ export default function Profile()
                 initial={{opacity: 0}}
                 whileInView={{opacity: 1}}
                 className="w-full max-w-xs">
-                    <Image className="w-full" src="/company/logo.png" width={200} height={100} alt="company logo"/>
+                    <Image className="w-full" src="/company/logo.png" width={200} height={100} alt="company logo" loading="eager"/>
                 </motion.div>
 
                 <div className="lg:col-span-2">

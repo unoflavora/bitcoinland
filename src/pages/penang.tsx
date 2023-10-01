@@ -36,7 +36,7 @@ export default function Penang()
                     viewport={{once : true}}
                     className="relative "
                 >
-                    <Image className="z-20" src={"/graphics/bitcoinland2.png"} width={1500} height={500} alt="bitcoinland concept"/>
+                    <Image className="z-20" src={"/graphics/bitcoinland2.png"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
 
                   
 
@@ -57,7 +57,7 @@ export default function Penang()
                     whileInView={{scale: 1}}
                     viewport={{once : true}}
                 >
-                    <Image src={"/graphics/bitcoinland1.png"} width={1500} height={500} alt="bitcoinland concept"/>
+                    <Image src={"/graphics/bitcoinland1.png"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
                 </motion.div>
 
             </div>

@@ -60,7 +60,7 @@ export default function Pangkor()
 
 
             <MotionDiv>
-                <Image className="w-full h-full rounded-xl" src="/graphics/pangkor.png" width={900} height={500} alt="map of pangkor"/>
+                <Image className="w-full h-full rounded-xl" src="/graphics/pangkor.png" width={900} height={500} alt="map of pangkor" loading="eager"/>
 
             </MotionDiv>
 

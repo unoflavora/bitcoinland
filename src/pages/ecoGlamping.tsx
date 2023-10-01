@@ -33,8 +33,8 @@ export default function EcoGlamping()
 
   <div className="relative w-full 2xl:px-56 md:w-[70%]">
   <div className="absolute flex  z-0 max-lg:left-0 lg:right-0 max-lg:-top-20 opacity-30 -top-0">
-    <Image className="md:w-56 " src={"/graphics/tree_big.svg"} width={125} height={100} alt="coin decoration"/>
-    <Image className="max-sm:hidden" src={"/graphics/tree_smaller.svg"} width={80} height={100} alt="coin decoration"/>
+    <Image className="md:w-56 " src={"/graphics/tree_big.svg"} width={125} height={100} alt="coin decoration" loading="eager"/>
+    <Image className="max-sm:hidden" src={"/graphics/tree_smaller.svg"} width={80} height={100} alt="coin decoration " loading="eager"/>
   </div>
   <MotionDiv>
         <h1 className='text-5xl lg:text-7xl 2xl:text-9xl text-gold text-start font-bold'> Eco Glamping</h1>

@@ -12,7 +12,7 @@ export default function MotionImageDesc(props: {index : number, title: string, d
                 viewport={{once: true}}
                 className='w-full bg-white z-10'
             >
-                <Image className='rounded-xl w-full' src={props.imageUrl} width={800} height={250} alt={props.desc}/>
+                <Image className='rounded-xl w-full' src={props.imageUrl} width={800} height={250} alt={props.desc} loading="eager"/>
             </motion.div>
 
             <div className='flex flex-col  gap-3 md:w-3/4 '>
