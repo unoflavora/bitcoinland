@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta property="og:title" content="Bitcoinland"/>
       <meta property="og:type" content="website"/>
       <meta property="og:image" content="https://i.ibb.co/c8Jm0LN/ss.png"/>
-      <meta property="og:url" content="bitcoinland.vercel.app"/>
+      <meta property="og:url" content="https://bitcoinland.vercel.app"/>
       <meta name="twitter:card" content="summary_large_image"/>
 
       <meta property="og:description" content="The Bitcoin iconic building and masterplan city project."/>
