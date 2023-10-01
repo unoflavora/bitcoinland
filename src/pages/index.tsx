@@ -4,6 +4,7 @@ import { AppContext } from './state/state';
 import World from './world';
 import Stats from './stats';
 import Games from './games';
+import PengkalanHulu from './pengkalanHulu';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Home() {
         <World/>
         <Stats/>
         <Games/>
+        <PengkalanHulu/>
     </div>
   )
 }
