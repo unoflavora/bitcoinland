@@ -2,7 +2,7 @@
 <rect width="3035" height="1758" fill="url(#pattern0)"/>
 <style type="text/css">
 
-    .circle { animation: x 1s ease alternate infinite; }
+    .circle { animation: x 3s ease alternate infinite; }
 
     @keyframes x {
         from { opacity: 0; }
