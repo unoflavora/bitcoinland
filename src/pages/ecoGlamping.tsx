@@ -52,7 +52,7 @@ export default function EcoGlamping()
       whileInView={{scale: 1}}
       viewport={{once: true}}
       className="relative w-full h-auto flex justify-center">
-      <Image className="w-full" src={'/graphics/bitcoinland.png'} width={900} height={500} alt="bitcoin triangle"/>
+      <Image className="w-full" src={'/graphics/bitcoinland.svg'} width={900} height={500} alt="bitcoin triangle"/>
       <h1       
         className="absolute left-5 xl:left-10 font-semibold top-[35%] origin-center translate-1/2  md:text-5xl lg:text-7xl xl:text-9xl leading-relaxed">
         Bitcoinland <br/> Triangle

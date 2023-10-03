@@ -20,7 +20,7 @@ export default function Navbar()
     const [isScrollingBack, setIsScrollingBack] = useState(false)
     const [isAtTop, setIsAtTop] = useState(true) // true if the page is not scrolled or fully scrolled back
     const [isInView, setIsInView] = useState(true)
-    const {showNav} = useContext(AppContext);
+    const {showNav, setShowNav} = useContext(AppContext);
     const [isOpen, setOpen] = useState(false)
 
     const [navVisible, setNavVisible] = useState(false);
@@ -34,6 +34,7 @@ export default function Navbar()
                 }
                 if (latest < -threshold) {
                     setIsScrollingBack(true)
+                    setShowNav(true)
                     return
                 }
             }),
@@ -41,13 +42,13 @@ export default function Navbar()
     )
 
     useEffect(
-        () => scrollY.on('change', (latest) => setIsAtTop(latest <= 0)),
+        () => scrollY.on('change', (latest) => {setIsAtTop(latest <= 0); setShowNav(true)}),
         []
     )
 
     useEffect(
-        () => setIsInView(isScrollingBack || isAtTop),
-        [isScrollingBack, isAtTop]
+        () => setIsInView((isScrollingBack || isAtTop) && showNav),
+        [isScrollingBack, isAtTop, showNav]
     )
 
     useEffect(() => {
