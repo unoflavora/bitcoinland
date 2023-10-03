@@ -17,6 +17,25 @@ const config: Config = {
         'grey': "#343530",
         'yellow': "#FCD434",
         'gold': "#CA9C28"
+      },
+      animation: {
+        'linear-bg': 'textclip 5s linear infinite',
+        'fadeIn': 'fadeIn 2s linear 1',
+        'bgFadeOut' : 'bgFadeOut 3s linear 1'
+      },
+      keyframes: {
+        textclip : {
+            'from': {'background-position' : '0% center'},
+             'to': {'background-position' : '200% center'}
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        bgFadeOut: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '.6' },
+        }
       }
     },
   },
