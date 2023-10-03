@@ -13,8 +13,8 @@ export default function FarmingOnline() {
         }
     ]
     return <div className={parentElementStyle}>
-        <Image className="w-full" src="/story/farming-online.png" width={340} height={110} alt="farming online logo"/>
-        <div className="flex flex-col gap-3 md:grid md:grid-cols-2">
+        <Image className="w-full lg:w-1/2" src="/story/farming-online.png" width={340} height={110} alt="farming online logo"/>
+        <div className="flex lg:w-3/4 flex-col gap-3 md:gap-8 md:grid md:grid-cols-2">
         {stories.map((story, _) => <div key={story.title} className="flex flex-col gap-2">
             <h1 className="text-xl font-bold text-black">{story.title}</h1>
             <p className="text-text-grey">{story.desc}</p>
