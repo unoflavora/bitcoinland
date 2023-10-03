@@ -5,7 +5,7 @@ import MotionDiv from './components/motionDiv';
 export default function Profile()
 {
     return (
-        <div className='w-full flex justify-center items-center py-20 2xl:py-44 px-5 md:px-14 xl:px-36 2xl:px-96'>
+        <div className='w-full flex bg-gradient-to-b from-[#efd492fd] to-white justify-center items-center py-20 2xl:py-44 px-5 md:px-14 xl:px-36 2xl:px-96'>
             <div className="flex flex-col  max-md:gap-5 md:gap-10 lg:gap-20  md:flex-row justify-center items-center">
                 <motion.div
                 viewport={{once : true}}

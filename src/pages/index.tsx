@@ -9,6 +9,7 @@ import Mentagor from './mentagor';
 import Penang from './penang';
 import Profile from './profile';
 import Title from './title';
+import Header from './header';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,9 +19,12 @@ export default function Home() {
 
   return (
     <div className={`flex flex-col  ${showNav ? "" : "my-0"} transition-all ${inter.className}`}>
-        <World/>
-        <div className='flex flex-col mt-10'>
-          <Profile/>
+        <Header/>
+        <Profile/>
+
+          <World/>
+          <div className='flex flex-col mt-10'>
+
           <Penang/>
           <EcoGlamping/>
           <PengkalanHulu/>

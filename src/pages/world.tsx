@@ -15,17 +15,14 @@ export default function World()
     const [isLoading, setIsLoading] = useState(true);
 
     const iframeRef = useRef<any>();
+    const divRef = useRef<any>();
+
 
   
-    useEffect(() => {
-      setShowNav(true)
-    }, [])
-  
     const onClickPlay = () => {
-      window.scrollTo({top : 0, behavior: "smooth"});
+      divRef.current?.scrollIntoView({behaviour: 'smooth'})
       setIsPlaying(true);
       setShowNav(false)
-      iframeRef.current.contentWindow.postMessage("openScene", "*");
     }
 
     useEffect(() => {
@@ -50,17 +47,15 @@ export default function World()
 
         }, )
     }, [])
-    return <>
-    
-        <Div100vh className={`grow transition-transform ${isPlaying || !readyToPlay ? "translate-y-0 md:rounded-b-0 z-[10000] pointer-events-auto" : "translate-y-12 xl:translate-y-24 pointer-events-none"}`}>
-            <iframe ref={iframeRef} className={`w-full h-full`}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
-        </Div100vh>
 
-        { readyToPlay &&
+    return <Div100vh ref={divRef} className={`relative grow p-5`}>
+        
+        <iframe ref={iframeRef} className={`w-full h-full rounded-2xl ${isPlaying  ? 'pointer-events-auto' : 'pointer-events-none'} `}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
+
+        {readyToPlay && 
             <motion.div 
                 animate={{opacity: readyToPlay && !isPlaying ? 1 : 0}}
-                transition={{delay: readyToPlay ? 1.25 : 0}}
-                onClick={onClickPlay} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
+                onClick={() => { iframeRef.current.contentWindow.postMessage("openScene", "*"); onClickPlay() }} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
             <Button>
                 Enter the Bitcoinland
             </Button>
@@ -68,5 +63,5 @@ export default function World()
         }     
        
         
-    </>
+    </Div100vh>
 }
