@@ -16,7 +16,8 @@ const config: Config = {
       colors: {
         'grey': "#343530",
         'yellow': "#FCD434",
-        'gold': "#CA9C28"
+        'gold': "#CA9C28",
+        'text-grey': "#64686B"
       },
       animation: {
         'linear-bg': 'textclip 5s linear infinite',
