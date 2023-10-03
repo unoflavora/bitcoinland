@@ -55,7 +55,7 @@ export default function PengkalanHulu()
             </p>
 
             <p>
-            Explore a world of leisure with diverse retail outlets, comfortable hotel accommodations, and a lush fruit orchard garden. This symphony of cultural fusion, environmental stewardship, and modern amenities creates a haven for discerning travellers, offering an enriching tapestry of experiences in this enchanting region.
+                Explore a world of leisure with diverse retail outlets, comfortable hotel accommodations, and a lush fruit orchard garden. This symphony of cultural fusion, environmental stewardship, and modern amenities creates a haven for discerning travellers, offering an enriching tapestry of experiences in this enchanting region.
             </p>
         </div>
         </div>
