@@ -31,7 +31,7 @@ export default function Penang()
                     </div>
                 </MotionDiv>
                 <motion.div
-                    transition={{ease: "linear", duration: 1}}
+                    transition={{ease: "linear", duration: .6}}
                     initial={{scale: 0}}
                     whileInView={{scale: 1}}
                     viewport={{once : true}}
@@ -53,7 +53,7 @@ export default function Penang()
                 </MotionDiv>
 
                 <motion.div
-                    transition={{ease: "easeInOut", duration: 1}}
+                    transition={{ease: "linear", duration: .6}}
                     initial={{scale: 0}}
                     whileInView={{scale: 1}}
                     viewport={{once : true}}

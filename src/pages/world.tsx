@@ -13,10 +13,6 @@ export default function World()
 
     const [readyToPlay, setRoadyToPlay] = useState(false);
 
-    const [isLoading, setIsLoading] = useState(true);
-
-    const [isReadyToDownload, setIsReadyToDownload] = useState(false);
-
     const iframeRef = useRef<any>();
 
     const divRef = useRef<any>();
@@ -31,8 +27,6 @@ export default function World()
     }
 
     const onClickDownload = () => {
-        if(isReadyToDownload === false) return;
-
         divRef.current?.scrollIntoView({behaviour: 'smooth'})
 
         setShowNav(false)
@@ -45,8 +39,6 @@ export default function World()
             if(e.data === "finishInitialLoading")
             {
                 console.log("FINISH LOADING INIT")
-                setIsLoading(false);
-                setIsReadyToDownload(true);
             }
             if(e.data === "startScene" )
             {
@@ -65,7 +57,7 @@ export default function World()
 
     return <Div100vh ref={divRef} className={`relative grow p-5`}>
         
-        <iframe ref={iframeRef} className={`w-full h-full rounded-2xl ${isPlaying || (isReadyToDownload && !readyToPlay) ? 'pointer-events-auto' : 'pointer-events-none'} `}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
+        <iframe ref={iframeRef} className={`w-full h-full rounded-2xl ${isPlaying ? 'pointer-events-auto' : 'pointer-events-none'} `}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
         
         {readyToPlay && !isPlaying &&
             <motion.div 
