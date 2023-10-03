@@ -1,5 +1,6 @@
 import MotionDiv from "../components/motionDiv";
 import About from "./abouts";
+import FoodSecurity from "./foodSecurity";
 import Story from "./story";
 import Token from "./tokenInformation";
 
@@ -10,6 +11,8 @@ export default function Index()
         <MotionDiv>
             <Story/>
         </MotionDiv>
+        <FoodSecurity/>
+
         <About/>
 
         <MotionDiv>
