@@ -3,6 +3,7 @@ import { AppContext } from "./state/state";
 import {motion} from 'framer-motion';
 import Button from "./components/button";
 import Div100vh from 'react-div-100vh'
+import { read } from "fs";
 
 export default function World()
 {
@@ -14,15 +15,27 @@ export default function World()
 
     const [isLoading, setIsLoading] = useState(true);
 
+    const [isReadyToDownload, setIsReadyToDownload] = useState(false);
+
     const iframeRef = useRef<any>();
+
     const divRef = useRef<any>();
 
 
   
     const onClickPlay = () => {
       divRef.current?.scrollIntoView({behaviour: 'smooth'})
+      iframeRef.current.contentWindow.postMessage("openScene", "*");
       setIsPlaying(true);
-      setShowNav(false)
+      setTimeout(() =>setShowNav(false), 200)
+    }
+
+    const onClickDownload = () => {
+        if(isReadyToDownload === false) return;
+
+        divRef.current?.scrollIntoView({behaviour: 'smooth'})
+
+        setShowNav(false)
     }
 
     useEffect(() => {
@@ -31,7 +44,9 @@ export default function World()
 
             if(e.data === "finishInitialLoading")
             {
+                console.log("FINISH LOADING INIT")
                 setIsLoading(false);
+                setIsReadyToDownload(true);
             }
             if(e.data === "startScene" )
             {
@@ -50,12 +65,12 @@ export default function World()
 
     return <Div100vh ref={divRef} className={`relative grow p-5`}>
         
-        <iframe ref={iframeRef} className={`w-full h-full rounded-2xl ${isPlaying  ? 'pointer-events-auto' : 'pointer-events-none'} `}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
-
-        {readyToPlay && 
+        <iframe ref={iframeRef} className={`w-full h-full rounded-2xl ${isPlaying || (isReadyToDownload && !readyToPlay) ? 'pointer-events-auto' : 'pointer-events-none'} `}  src='https://dbisamples.s3.ap-southeast-1.amazonaws.com/bitcoinland/index.html'></iframe>
+        
+        {readyToPlay && !isPlaying &&
             <motion.div 
                 animate={{opacity: readyToPlay && !isPlaying ? 1 : 0}}
-                onClick={() => { iframeRef.current.contentWindow.postMessage("openScene", "*"); onClickPlay() }} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
+                onClick={() => {  onClickPlay() }} className='animate-pulse absolute left-1/2 bottom-20 -translate-x-1/2 lg:bottom-50'>
             <Button>
                 Enter the Bitcoinland
             </Button>
