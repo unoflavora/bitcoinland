@@ -1,14 +1,13 @@
 import { Inter } from 'next/font/google'
 import { useContext } from 'react'
 import { AppContext } from './state/state';
-import World from './world';
-import EcoGlamping from './ecoGlamping';
-import PengkalanHulu from './pengkalanHulu';
-import Pangkor from './pangkor';
-import Mentagor from './mentagor';
-import Penang from './penangHome';
-import Profile from './profile';
-import Title from './title';
+import World from './_home/_world';
+import EcoGlamping from './_home/_ecoGlamping';
+import PengkalanHulu from './_home/_pengkalanHulu';
+import Pangkor from './_home/_pangkor';
+import Mentagor from './_home/_mentagor';
+import Penang from './_home/_penangHome';
+import Profile from './_home/_profile';
 import Header from './components/header';
 
 const inter = Inter({ subsets: ['latin'] })

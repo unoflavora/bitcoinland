@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion';
 import Image from 'next/image';
-import MotionDiv from './components/motionDiv';
+import MotionDiv from "../components/motionDiv";
 export default function Pangkor()
 {
 
