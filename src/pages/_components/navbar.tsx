@@ -22,6 +22,7 @@ export default function Navbar()
     const [isInView, setIsInView] = useState(true)
     const {showNav, setShowNav} = useContext(AppContext);
     const [isOpen, setOpen] = useState(false)
+    const [viewIslands, setViewIslands] = useState(false)
 
     const [navVisible, setNavVisible] = useState(false);
 
@@ -69,8 +70,21 @@ export default function Navbar()
             animate={{y : isInView ? 0 : -slideDistance}}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className={`fixed flex flex-col w-full z-20`}>
+            <div className={`absolute top-full py-5 flex w-full justify-between items-center 
+                            ${viewIslands ? 'translate-y-0' : '-translate-y-full'}
+                            px-5  transition-all drop-shadow-sm shadow-[#00000026] bg-grey lg:px-24`}>
+                <h1 className=' font-bold text-white text-2xl'>Bitcoinland Triangle</h1>
+                <div className='font-semibold text-white text-lg flex gap-10'>
+                    <Link onClick={() => {setViewIslands(!viewIslands)}} href={'/penang'}>Penang</Link>
+                    <Link onClick={() => {setViewIslands(!viewIslands)}} href={'/pangkor'}>Pangkor</Link>
+                    <Link onClick={() => {setViewIslands(!viewIslands)}} href={'/mentagor-island'}>Mentagor</Link>
+                    <Link  onClick={() => {setViewIslands(!viewIslands)}} href={'/pengkalan-hulu'}>Pengkalan Hulu</Link>
+
+                </div>
+            </div>
+
             <div className='flex w-full items-center px-5 md:py-3 lg:py-5 transition-all drop-shadow-sm shadow-[#00000026] bg-grey lg:px-24  justify-between'>
-     
+
             <Link href="/" onClick={() =>setOpen(false)}  className='h-auto w-auto md:w-10 lg:w-14'>
                 <Image className='w-full h-full' src="/icon.png" width={30} height={25} alt='company logo'/>
 
@@ -85,6 +99,12 @@ export default function Navbar()
                     {title}
                 </Link>)}
 
+                <button onClick={() => {
+                        setViewIslands(!viewIslands)
+                    }} className='flex justify-center items-center gap-1.5'>
+                    Our Islands <Image className={`${viewIslands ? 'rotate-0' : 'rotate-180'} transition-all mt-1.5`} src={'/graphics/arrow-down.svg'} width={20} height={20} alt=''/>
+                </button>
+
                 <Link 
                     href="/contact"
                     className={`p-2 px-4 hover:scale-110 rounded-md  bg-gold text-center text-white`}
@@ -92,6 +112,7 @@ export default function Navbar()
                     Contact Us
                 </Link>
             </ul>
+
 
             </div>
 
