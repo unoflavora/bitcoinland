@@ -12,7 +12,7 @@ export default function BitcoinTransactions()
                         <h2 className="font-bold text-black">The public decentralised ledger in which the Bitcoin operates on is known as a blockchain.</h2>
 
                     </div>
-                    <div className="h-full w-auto  rounded-xl bg-[url('/graphics/blockchain.png')] bg-[30%_20%] bg-cover"></div>
+                    <div className="h-full w-auto  rounded-xl bg-[url('/graphics/blockchain.webp')] bg-[30%_20%] bg-cover"></div>
                 </div>
                 <div className="flex flex-col gap-4">
                     {
