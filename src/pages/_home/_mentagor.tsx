@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 
 import Image from "next/image";
-import MotionDiv from "../components/motionDiv";
+import MotionDiv from "../_components/motionDiv";
 
 /* eslint-disable jsx-a11y/alt-text */
 export default function Mentagor()

@@ -1,5 +1,5 @@
-import ColorizedText from "../components/colorizedText";
-import TemplateImage from "../components/templateImage";
+import ColorizedText from "../_components/colorizedText";
+import TemplateImage from "../_components/templateImage";
 import Form from "./form";
 import {motion} from 'framer-motion'
 

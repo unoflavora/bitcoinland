@@ -1,6 +1,6 @@
 import {motion} from 'framer-motion';
 import Image from 'next/image'
-import MotionDiv from "../components/motionDiv";
+import MotionDiv from "../_components/motionDiv";
 
 export default function Profile()
 {

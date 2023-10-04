@@ -1,5 +1,5 @@
 import { parentElementStyle } from "@/lib/classnames";
-import Header from "../components/header";
+import Header from "../_components/header";
 import Image from "next/image";
 import Positioning from "./positioning";
 import Location from "./location";

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import MotionDiv from "../components/motionDiv";
+import MotionDiv from "../_components/motionDiv";
 
 
 export default function Title ()
