@@ -7,7 +7,7 @@ import Image from "next/image";
 export default function Page()
 {
     return <div className="w-full h-full relative">
-                <Header descColor="text-white" descText="BITCOIN EXOCTIC ISLAND" fromColor="from-white" toColor="from-white" headerText="PANGKOR" src="/pangkor/hero.png"/>
+                <Header descColor="text-white" descText="BITCOIN EXOCTIC ISLAND" fromColor="from-white" toColor="from-white" headerText="PANGKOR" src="/pangkor/hero.webp"/>
         <Pangkor/>
 
         <div className={parentElementStyle}>
@@ -26,7 +26,7 @@ export default function Page()
                     whileInView={{scale: 1}}
                     viewport={{once : true}}
                 >
-                    <Image className="rounded-2xl" src={"/pangkor/highway.png"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
+                    <Image className="rounded-2xl" src={"/pangkor/highway.webp"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
                 </motion.div>
 
             </div>
@@ -40,8 +40,8 @@ export default function Page()
                         </p>
                     </div>
                     <div className="flex flex-col gap-5 md:grid md:grid-cols-2">
-                    <div className="w-full h-full bg-cover bg-[url('/pangkor/airport1.png')] min-h-[20rem] lg:min-h-[50rem] rounded-xl"/>
-                    <div className="w-full h-full bg-cover bg-[url('/pangkor/airport2.png')] min-h-[20rem] rounded-xl"/>
+                    <div className="w-full h-full bg-cover bg-[url('/pangkor/airport1.webp')] min-h-[20rem] lg:min-h-[50rem] rounded-xl"/>
+                    <div className="w-full h-full bg-cover bg-[url('/pangkor/airport2.webp')] min-h-[20rem] rounded-xl"/>
 
                     </div>
 
