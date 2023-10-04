@@ -27,7 +27,7 @@ export default function Islands()
         {
             title: 'Pengkalan Hulu',
             desc: "Bitcoin Elephant Sanctuary",
-            imgUrl: "bg-[url('/pengkalan-hulu/hero.png')]",
+            imgUrl: "bg-[url('/pengkalan-hulu/hero.webp')]",
             href: '/pengkalan-hulu'
         },
 
