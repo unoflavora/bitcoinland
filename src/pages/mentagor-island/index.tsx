@@ -27,7 +27,7 @@ export default function Page()
                     whileInView={{scale: 1}}
                     viewport={{once : true}}
                 >
-                    <Image className="rounded-2xl" src={"/mentagor/map.png"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
+                    <Image className="rounded-2xl" src={"/mentagor/map.webp"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
                 </motion.div>
 
             </div>
@@ -36,10 +36,10 @@ export default function Page()
                 <div className="flex w-full flex-col justify-center gap-5 ">
                     <div className="flex flex-col md:flex-row gap-5 py-10 items-center">
                         <h1 className="font-bold text-black text-4xl ">Mentagor Bridge to Pangkor</h1>
-                        <div className="w-full h-full bg-cover bg-[url('/mentagor/bridge1.png')] min-h-[20rem] lg:min-h-[50rem] rounded-xl"/>
+                        <div className="w-full h-full bg-cover bg-[url('/mentagor/bridge1.webp')] min-h-[20rem] lg:min-h-[50rem] rounded-xl"/>
 
                     </div>
-                    <div className="w-full h-full bg-cover bg-[url('/mentagor/bridge.png')] min-h-[20rem] lg:min-h-[50rem] rounded-xl"/>
+                    <div className="w-full h-full bg-cover bg-[url('/mentagor/bridge.webp')] min-h-[20rem] lg:min-h-[50rem] rounded-xl"/>
 
 
 

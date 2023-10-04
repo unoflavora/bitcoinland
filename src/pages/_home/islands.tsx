@@ -21,7 +21,7 @@ export default function Islands()
         {
             title: 'Mentagor',
             desc: "Bitcoin Exotic Island",
-            imgUrl: "bg-[url('/mentagor/hero.png')]",
+            imgUrl: "bg-[url('/mentagor/hero.webp')]",
             href: '/mentagor-island'
         },
         {
