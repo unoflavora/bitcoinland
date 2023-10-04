@@ -8,7 +8,7 @@ import EcoGlamping from "./(components)/ecoGlamping";
 export default function Page()
 {
     return <div className="w-full h-full relative">
-        <Header descColor="text-white" descText="BITCOIN EXOCTIC ISLAND" fromColor="from-white" toColor="from-white" headerText="MENTAGOR" src="/mentagor/hero.png"/>
+        <Header descColor="text-white" descText="BITCOIN EXOCTIC ISLAND" fromColor="from-white" toColor="from-white" headerText="MENTAGOR" src="/mentagor/hero.webp"/>
         <Mentagor/>
 
         <div className={parentElementStyle}>
