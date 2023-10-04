@@ -22,7 +22,7 @@ export default function Islands()
             title: 'Mentagor',
             desc: "Bitcoin Exotic Island",
             imgUrl: "bg-[url('/mentagor/hero.png')]",
-            href: '/mentagor'
+            href: '/mentagor-island'
         },
         {
             title: 'Pengkalan Hulu',

@@ -2,11 +2,6 @@ import { Inter } from 'next/font/google'
 import { useContext } from 'react'
 import { AppContext } from './state/state';
 import World from './_home/_world';
-import EcoGlamping from './_home/_ecoGlamping';
-import PengkalanHulu from './_home/_pengkalanHulu';
-import Pangkor from './pangkor/(components)/pangkor';
-import Mentagor from './_home/_mentagor';
-import Penang from './_home/_penangHome';
 import Profile from './_home/_profile';
 import Header from './_components/header';
 import About from './_home/abouts';
