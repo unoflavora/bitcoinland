@@ -33,7 +33,7 @@ export default function Positioning()
                 }
         </div>
         <div className="relative w-full">
-            <Image className="w-full" width={950} height={550} alt="map of penang bitcoin resort city" src={'/penang/map.png'}/>
+            <Image className="w-full" width={950} height={550} alt="map of penang bitcoin resort city" src={'/penang/map.webp'}/>
             <h1 className="absolute w-1/2 text-black left-5 top-5 font-bold text-xl md:text-5xl lg:text-8xl leading-tight">Penang Bitcoin Resort City</h1>
         </div>
       

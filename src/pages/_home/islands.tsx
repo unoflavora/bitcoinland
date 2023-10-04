@@ -9,7 +9,7 @@ export default function Islands()
         {
             title: 'Penang',
             desc: "Bitcoin Resort City",
-            imgUrl: "bg-[url('/penang/hero.png')]",
+            imgUrl: "bg-[url('/penang/hero.webp')]",
             href: '/penang'
         },
         {

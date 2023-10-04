@@ -35,7 +35,7 @@ export default function Nodes()
             <p className="text-text-grey">The southeastern coast of Penang is a fast lane for passerby passing from Batu Maung to Sungai Dua into Georgetown. The most signiﬁcant natural element along this trail of highway is Pulau Jerejak. Framing Pulau Jerejak, these zones creates engine of growth that fuels the hole masterplan.</p>
 
             <div className="flex justify-between gap-10">
-             <Image className="rounded-xl" src="/penang/nodes.png" width={500} height={712} alt="Picture of nodes"/>
+             <Image className="rounded-xl" src="/penang/nodes.webp" width={500} height={712} alt="Picture of nodes"/>
 
              <div className="max-lg:hidden flex flex-col gap-5">
                 {nodes.map((n, _) => <Node title={n.title} desc={n.desc} key={n.title}/>)}

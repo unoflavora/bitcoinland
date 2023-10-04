@@ -64,7 +64,7 @@ export default function Gallery()
             </div>
 
             <div className="flex flex-col rounded-xl w-full">
-            <div className="rounded-xl bg-[url('/penang/bitcoin-international.png')] bg-cover w-full h-96 2xl:h-[800px] ">
+            <div className="rounded-xl bg-[url('/penang/bitcoin-international.webp')] bg-cover w-full h-96 2xl:h-[800px] ">
                 <div className="max-md:hidden bg-gradient-to-l flex justify-end text-end px-5 items-center from-black w-full h-full">
                     <h1 className="text-3xl xl:text-5xl w-1/2 font-semibold">International Presence to Heritage City</h1>
                 </div>
@@ -77,7 +77,7 @@ export default function Gallery()
             </div>
 
             <div className="flex flex-col rounded-xl w-full">
-            <div className="bg-[url('/penang/landmark.png')] bg-[60%] bg-cover w-full h-96 2xl:h-[800px] ">
+            <div className="bg-[url('/penang/landmark.webp')] bg-[60%] bg-cover w-full h-96 2xl:h-[800px] ">
                 <div className="max-md:hidden bg-gradient-to-r flex justify-start text-start items-center from-black w-full h-full">
                     <h1 className="text-3xl xl:text-5xl px-5 w-1/2 font-semibold">Penang Bitcoin Landmark</h1>
                 </div>

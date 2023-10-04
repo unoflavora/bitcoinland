@@ -5,7 +5,7 @@ export default function Buildings()
 {
     return <div className=" flex flex-col gap-5 h-full">
         <div className="relative w-full h-fit">
-            <Image className="rounded-2xl" src={"/penang/bg-town.png"} width={1200} height={300} alt=""/>
+            <Image className="rounded-2xl" src={"/penang/bg-town.webp"} width={1200} height={300} alt=""/>
             <div className="w-full h-full absolute top-0 bg-black rounded-2xl opacity-50 z-0"/>
             <p className="absolute left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 font-bold z-10 text-xl md:text-3xl ">Iconic Building</p>
         </div>
@@ -14,7 +14,7 @@ export default function Buildings()
         <div className="w-full flex flex-col gap-10">
             
         <MotionDiv>
-            <Image className="w-full rounded-2xl" src="/penang/port.png" width={900} height={500} alt="map of pengkalan hulu" loading="eager"/>
+            <Image className="w-full rounded-2xl" src="/penang/port.webp" width={900} height={500} alt="map of pengkalan hulu" loading="eager"/>
         </MotionDiv>
 
         <div className="flex flex-col md:grid md:grid-cols-3 gap-10 lg:text-lg xl:text-xl text-black">
