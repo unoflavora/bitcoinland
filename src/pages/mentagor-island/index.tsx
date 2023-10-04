@@ -34,12 +34,11 @@ export default function Page()
 
             <MotionDiv>
                 <div className="flex w-full flex-col justify-center gap-5 ">
-                    <div className="flex flex-col md:flex-row gap-5 py-10 items-center">
-                        <h1 className="font-bold text-black text-4xl ">Mentagor Bridge to Pangkor</h1>
-                        <div className="w-full h-full bg-cover bg-[url('/mentagor/bridge1.webp')] min-h-[20rem] lg:min-h-[50rem] rounded-xl"/>
 
-                    </div>
                     <div className="w-full h-full bg-cover bg-[url('/mentagor/bridge.webp')] min-h-[20rem] lg:min-h-[50rem] rounded-xl"/>
+                    <div className="w-full flex items-center h-full bg-cover bg-[7%] bg-[url('/mentagor/rajamuda.webp')] min-h-[30rem] lg:min-h-[50rem] rounded-xl">
+                        <h1 className="md:px-8 max-md:text-2xl w-1/2 px-4 2xl:px-16 text-3xl lg:text-5xl mb-44 lg:mb-64 font-bold md:w-5/12">Raja Muda Round Island Race Event</h1>
+                    </div>
 
 
 
