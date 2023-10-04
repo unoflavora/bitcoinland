@@ -29,9 +29,9 @@ export default function Pangkor()
             transition={{duration: 1}}
             className="flex flex-col gap-4"
         >
-             <div className="flex flex-col gap-2">
+             <div className="flex flex-col gap-4">
                     <h3 className="text-4xl font-bold">Pangkalan Bitcoin Exotic Island</h3>
-                    <div id='line' className="w-1/4 bg-gold h-1"/> 
+                    <div id='line' className="w-2/12 bg-gold h-1"/> 
                 </div>
 
                 <p>

@@ -9,7 +9,7 @@ export default function PengkalanHulu()
 
     return <div className="relative w-full bg-[#F5F5F5]">
         <div className="absolute flex z-0 left-0 max-md:opacity-30 top-5">
-            <Image className="lg:w-96  scale-x-[-1]" src={"/graphics/elephant.svg"} width={200} height={100} alt="coin decoration" />
+            <Image className="2xl:w-72  scale-x-[-1]" src={"/graphics/elephant.svg"} width={200} height={100} alt="coin decoration" />
         </div>
         <Image className="absolute bottom-0 right-0 max-sm:hidden" src={"/graphics/elephant.svg"} width={200} height={100} alt="coin decoration"/>
 
