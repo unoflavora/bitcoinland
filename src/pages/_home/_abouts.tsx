@@ -1,5 +1,5 @@
-import MotionDiv from "../components/motionDiv";
-import ColorizedText from "../components/colorizedText";
+import MotionDiv from "../_components/motionDiv";
+import ColorizedText from "../_components/colorizedText";
 import {motion} from 'framer-motion';
 import Image from "next/image";
 

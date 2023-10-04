@@ -8,7 +8,7 @@ import Pangkor from './_home/_pangkor';
 import Mentagor from './_home/_mentagor';
 import Penang from './_home/_penangHome';
 import Profile from './_home/_profile';
-import Header from './components/header';
+import Header from './_components/header';
 
 const inter = Inter({ subsets: ['latin'] })
 

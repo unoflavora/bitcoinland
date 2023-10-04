@@ -1,6 +1,6 @@
-import MotionDiv from "../components/motionDiv";
-import ColorizedText from "../components/colorizedText";
-import MotionImageDesc from "../components/motionImageDesc";
+import MotionDiv from "../_components/motionDiv";
+import ColorizedText from "../_components/colorizedText";
+import MotionImageDesc from "../_components/motionImageDesc";
 import Image from "next/image";
 import {easeInOut, motion} from 'framer-motion';
 
