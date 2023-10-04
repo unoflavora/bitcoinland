@@ -101,7 +101,7 @@ export default function Gallery()
                     className="absolute left-5 xl:left-10 font-semibold top-[35%] origin-center text-left translate-1/2  text-2xl md:text-3xl xl:text-5xl leading-relaxed">
                     Bitcoinland <br/> Triangle
                 </h1>
-                </motion.div>
+            </motion.div>
 </div>
 
 }

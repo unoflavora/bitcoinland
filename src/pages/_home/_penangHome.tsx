@@ -1,14 +1,12 @@
 import Image from "next/image";
 import {easeInOut, motion} from 'framer-motion';
 import MotionDiv from "../_components/motionDiv";
-import Title from "./_title";
 
 export default function Penang()
 {
     return <div
             id="BitcoinPenangRoot"
             className=" relative overflow-hidden bg-[#f5f5f5] flex flex-col justify-center items-center gap-16 w-full px-5 md:px-16 py-20 text-center">
-            <Title/>
            
             <motion.h1
                 transition={{duration: 1}}

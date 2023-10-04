@@ -1,1 +1,1 @@
-export const parentElementStyle = "relative w-full h-full flex flex-col justify-center items-center px-5 md:px-16 lg:px-36 xl:px-44 py-10 gap-10 "
+export const parentElementStyle = "relative w-full h-full flex flex-col justify-center items-center px-5 md:px-16 xl:px-44 py-10 gap-10 "

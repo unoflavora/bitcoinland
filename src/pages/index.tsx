@@ -9,7 +9,10 @@ import Mentagor from './_home/_mentagor';
 import Penang from './_home/_penangHome';
 import Profile from './_home/_profile';
 import Header from './_components/header';
-
+import About from './_home/abouts';
+import BitcoinTransactions from './_home/transactions';
+import Title from './_home/title';
+import Islands from './_home/islands';
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -29,15 +32,13 @@ export default function Home() {
           />
 
           <Profile/>
-
+          <About/>
+          <BitcoinTransactions/>
           <World/>
           <div className='flex flex-col mt-10'>
-
-          <Penang/>
-          <EcoGlamping/>
-          <PengkalanHulu/>
-          <Pangkor/>
-          <Mentagor/>
+            <Title/>
+            <Islands/>
+            
         </div>
     </div>
   )
