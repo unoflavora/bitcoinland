@@ -12,7 +12,7 @@ import Gallery from "./(components)/gallery";
 export default function Page() {
     return (
         <div className="min-h-screen w-full xl:px-44">
-            <Header src="/penang/hero.png" descColor="text-white" fromColor="text-white" toColor="text-white" descText="BITCOIN RESORT CITY" headerText="PENANG"/>
+            <Header src="/penang/hero.webp" descColor="text-white" fromColor="text-white" toColor="text-white" descText="BITCOIN RESORT CITY" headerText="PENANG"/>
             <div className={parentElementStyle + " md:gap-20"}>
                 <Location/>
                 <Positioning/>
