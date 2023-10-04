@@ -39,7 +39,7 @@ export default function Gallery()
                 >
 
 
-                <Image className="z-20" src={"/graphics/bitcoinland2.png"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
+                <Image className="z-20" src={"/graphics/bitcoinland2.webp"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
 
                 </motion.div>
             </div>
@@ -58,7 +58,7 @@ export default function Gallery()
                     whileInView={{scale: 1}}
                     viewport={{once : true}}
                 >
-                    <Image src={"/graphics/bitcoinland1.png"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
+                    <Image src={"/graphics/bitcoinland1.webp"} width={1500} height={500} alt="bitcoinland concept" loading="eager"/>
                 </motion.div>
 
             </div>

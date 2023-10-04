@@ -21,7 +21,7 @@ export default function PengkalanHulu()
         </div>
 
         <MotionDiv>
-            <Image className="w-full rounded-2xl" src="/graphics/pengkalan-hulu.png" width={900} height={500} alt="map of pengkalan hulu" loading="eager"/>
+            <Image className="w-full rounded-2xl" src="/pengkalan-hulu/pengkalan-hulu.webp" width={900} height={500} alt="map of pengkalan hulu" loading="eager"/>
         </MotionDiv>
 
         <div className="flex flex-col md:grid md:grid-cols-3 gap-10 lg:text-lg xl:text-xl text-black">
