@@ -1,5 +1,5 @@
+import MotionDiv from "@/pages/_components/motionDiv";
 import Image from "next/image";
-import MotionDiv from "../_components/motionDiv";
 
 export default function Buildings()
 {

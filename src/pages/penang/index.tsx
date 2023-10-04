@@ -1,13 +1,13 @@
 import { parentElementStyle } from "@/lib/classnames";
 import Header from "../_components/header";
 import Image from "next/image";
-import Positioning from "./positioning";
-import Location from "./location";
-import Nodes from "./nodes";
-import Architecture from "./architecture";
-import Buildings from "./buildings";
-import TouchDown from "./touchdown";
-import Gallery from "./gallery";
+import Positioning from "./(components)/positioning";
+import Location from "./(components)/location";
+import Nodes from "./(components)/nodes";
+import Architecture from "./(components)/architecture";
+import Buildings from "./(components)/buildings";
+import TouchDown from "./(components)/touchdown";
+import Gallery from "./(components)/gallery";
 
 export default function Page() {
     return (

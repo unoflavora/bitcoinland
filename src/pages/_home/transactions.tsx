@@ -5,14 +5,14 @@ export default function BitcoinTransactions()
 {
     return (
         <div className={parentElementStyle}>
-            <div className="flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-4 lg:gap-10">
+            <div className="flex flex-col md:flex-row lg:grid lg:grid-cols-2 gap-4 lg:gap-10 xl:gap-20">
                 <div className="w-full flex flex-col gap-4 lg:gap-10">
                     <div className="w-full flex flex-col gap-4">
                         <h1 className="text-4xl font-bold text-gold">Bitcoin Transactions</h1>
                         <h2 className="font-bold text-black">The public decentralised ledger in which the Bitcoin operates on is known as a blockchain.</h2>
 
                     </div>
-                    <div className="h-full w-auto min-h-[20rem]  rounded-xl bg-[url('/graphics/blockchain.png')] bg-[30%_20%] bg-cover"></div>
+                    <div className="h-full w-auto  rounded-xl bg-[url('/graphics/blockchain.png')] bg-[30%_20%] bg-cover"></div>
                 </div>
                 <div className="flex flex-col gap-4">
                     {

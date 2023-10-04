@@ -1,7 +1,6 @@
 import Image from "next/image";
 import {easeInOut, motion} from 'framer-motion';
-import MotionDiv from "../_components/motionDiv";
-
+import MotionDiv from "@/pages/_components/motionDiv";
 export default function Gallery()
 {
     return <div
