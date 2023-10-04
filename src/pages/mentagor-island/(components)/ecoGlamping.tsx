@@ -7,21 +7,21 @@ import {easeInOut, motion} from 'framer-motion';
 export default function EcoGlamping()
 {
   const glamping = [{
-    imageUrl: "/graphics/premium-chalets.png",
+    imageUrl: "/mentagor/premium-chalets.webp",
     title: "Eco Premium Chalets",
     from : "from-gold",
     to: "to-black",
     desc: "Chalets built in a forest overlooking a beach and the sea offer a captivating and serene retreat. These accommodations provide a harmonious blend of natural beauty and comfort. Imagine staying in a cozy chalet nestled among the trees, with the tranquil ambiance of the forest and the breathtaking view of the beach and sea just a gaze away. Such a setting allows for a peaceful escape, where visitors can enjoy the sights and sounds of nature while also indulging in the relaxing atmosphere of a seaside getaway."
   },
   {
-    imageUrl: "/graphics/luxurious-chalets.png",
+    imageUrl: "/mentagor/luxurious-chalets.webp",
     title: "Luxurious Tree-Top Chalets",
     from : "from-black",
     to: "to-gold",
     desc: "This beautifully designed chalets that are elevated within the treetops and surrounded by lush foliage offer a unique and enchanting experience. These accommodations often provide stunning views of the surrounding nature, a sense of privacy, and a feeling of being one with the environment.",
   },
   {
-    imageUrl: "/graphics/eco-tree-top.png",
+    imageUrl: "/mentagor/eco-tree-top.webp",
     title: "Eco-‘Tree-Top’ Premium Chalets",
     from : "from-gold",
     to: "to-black",
