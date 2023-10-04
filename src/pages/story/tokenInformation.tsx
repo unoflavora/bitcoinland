@@ -33,6 +33,23 @@ export default function Token()
                     </div>
              </div>
             </div>
+
+            <h1 className="w-full text-center text-4xl font-bold  text-[#ca9c28]">
+                $RXT Token Listing
+
+            </h1>
+
+            <div className="flex flex-col md:flex-row-reverse gap-8  justify-center items-center">
+                <div className=" p-8 rounded-xl w-full flex justify-center items-center">
+                <Image className="w-full h-full" src="/story/rxt_graph.png" width={500} height={1000} alt="token"/>
+
+                </div>
+                <ul className="list-disc text-text-grey px-5">
+                        <li>Open price for listing $2.00 on 1st October 2022</li>
+                        <li> All-time high was $15.30 on 7th October 2022</li>
+                        <li>$RXT can be viewed in Coin Market Cap, CoinGecko, and Dropstab, Coinbase, Binance.</li>
+                    </ul>
+            </div>
         
     </div>
     
