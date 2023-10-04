@@ -115,10 +115,21 @@ export default function Navbar()
 
                 )}
 
-                <Link onClick={() =>setOpen(false)} href={`/contact`}>
+                <Link onClick={() =>setOpen(false)} href={`/#islands`}>
                     <motion.li 
                         animate={{x: isOpen ? 0 : "200%"}}
                         transition={{delay : .1 * 2, duration: .35}}
+                        key={"link " + 3}
+                        className={`border-b-[0.15rem] py-5 `}
+                        >
+                        Our Islands
+                    </motion.li>
+                </Link>
+
+                <Link onClick={() =>setOpen(false)} href={`/contact`}>
+                    <motion.li 
+                        animate={{x: isOpen ? 0 : "200%"}}
+                        transition={{delay : .1 * 3, duration: .35}}
                         key={"link " + 3}
                         className={`border-b-[0.15rem] py-3 text-xl rounded-md  bg-yellow text-center text-black`}
                         >

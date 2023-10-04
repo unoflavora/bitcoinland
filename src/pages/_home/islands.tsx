@@ -32,7 +32,7 @@ export default function Islands()
         },
 
 ]
-    return <div className={parentElementStyle + " gap-20"}>
+    return <div id="islands" className={parentElementStyle + " gap-20"}>
 
         {islands.map((island, i) => 
             <div key={island.title} className={`relative flex    ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} md:gap-10 lg:gap-20 w-full h-full`}>\
