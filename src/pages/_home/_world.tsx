@@ -1,7 +1,7 @@
 import { IframeHTMLAttributes, useContext, useEffect, useRef, useState } from "react";
-import { AppContext } from "./state/state";
+import { AppContext } from "../state/state";
 import {motion} from 'framer-motion';
-import Button from "./components/button";
+import Button from "../components/button";
 import Div100vh from 'react-div-100vh'
 import { read } from "fs";
 

@@ -1,5 +1,4 @@
 import MotionDiv from "../components/motionDiv";
-import About from "./abouts";
 import FarmingOnline from "./farmingOnline";
 import FoodSecurity from "./foodSecurity";
 import NFTCollection from "./nftCollection";

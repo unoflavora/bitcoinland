@@ -1,7 +1,7 @@
 import Image from "next/image";
 import {easeInOut, motion} from 'framer-motion';
-import MotionDiv from "./components/motionDiv";
-import Title from "./title";
+import MotionDiv from "../components/motionDiv";
+import Title from "./_title";
 
 export default function Penang()
 {
