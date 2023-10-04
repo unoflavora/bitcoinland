@@ -1,10 +1,11 @@
 import {motion} from 'framer-motion';
 import Image from 'next/image';
 import MotionDiv from "../../_components/motionDiv";
+import { parentElementStyle } from '@/lib/classnames';
 export default function Pangkor()
 {
 
-    return <div className="relative flex flex-col gap-10 ">
+    return <div className={"relative flex flex-col gap-10 " + parentElementStyle}>
         <Image className="absolute -top-10 left-0 z-0" src={"/graphics/pangkor2.svg"} width={80} height={100} alt="coin decoration"/>
         <Image className="absolute bottom-0 right-0 z-0" src={"/graphics/pangkor.svg"} width={80} height={100} alt="coin decoration"/>
 
