@@ -2,6 +2,8 @@ import MotionDiv from "../components/motionDiv";
 import About from "./abouts";
 import FarmingOnline from "./farmingOnline";
 import FoodSecurity from "./foodSecurity";
+import NFTCollection from "./nftCollection";
+import Rimaunangis from "./rimaunangis";
 import Story from "./story";
 import Token from "./tokenInformation";
 
@@ -12,10 +14,11 @@ export default function Index()
         <MotionDiv>
             <Story/>
         </MotionDiv>
+
         <FoodSecurity/>
         <FarmingOnline/>
-
-        <About/>
+        <NFTCollection/>
+        <Rimaunangis/>
 
         <MotionDiv>
             <Token/>

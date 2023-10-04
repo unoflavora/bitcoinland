@@ -27,7 +27,7 @@ export default function FoodSecurity()
     ]
     
     return (
-        <div className={"bg-gray-200 " + parentElementStyle}>
+        <div className={"bg-gray-200 py-20 " + parentElementStyle}>
             <h1 className="font-bold text-black text-2xl lg:text-4xl text-center">Taking Holistic Concepts to Implement Sustainable, Socially Responsible, Operations in Food Security</h1>
             <div className="flex flex-col md:grid-cols-2 md:grid lg:grid-cols-4 w-full justify-center items-center gap-4">
                 {foodSecurity.map((foo, i) =>  
