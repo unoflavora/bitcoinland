@@ -48,9 +48,13 @@ export default function Navbar()
     )
 
     useEffect(
-        () => setIsInView((isScrollingBack || isAtTop) && showNav),
+        () => {
+            setIsInView((isScrollingBack || isAtTop) && showNav)
+        },
         [isScrollingBack, isAtTop, showNav]
     )
+
+    useEffect(() =>  setViewIslands(viewIslands && isInView), [isInView])
 
     useEffect(() => {
         if(isOpen)
