@@ -15,7 +15,7 @@ export default function Islands()
         {
             title: 'Pangkor',
             desc: "Bitcoin Exotic Island",
-            imgUrl: "bg-[url('/pangkor/hero.png')]",
+            imgUrl: "bg-[url('/pangkor/hero.webp')]",
             href: '/pangkor'
         },
         {
