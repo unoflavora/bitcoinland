@@ -38,22 +38,22 @@ export default function Islands()
             <div key={island.title} className={`relative flex    ${i % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} md:gap-10 lg:gap-20 w-full h-full`}>\
                 {(i === 0 || i === 2) && <Image className=' max-md:hidden   absolute top-0 right-0  '  src="/graphics/accessories1.svg"  width={300} height={300} alt=""/>}
 
-                {i === 1 && <Image className='max-md:hidden absolute top-0 left-0 scale-x-[-1]'  src="/graphics/accessories1.svg"  width={300} height={300} alt=""/>}
+                {i === 1 && <Image className='max-md:hidden z-0 absolute top-0 left-0 scale-x-[-1]'  src="/graphics/accessories1.svg"  width={300} height={300} alt=""/>}
 
-            <div className={`w-full flex items-end rounded-2xl  min-h-[37rem] md:min-h-[20rem] md:min-w-[2rem] bg-cover ${island.imgUrl}`}>
+            <div className={`w-full z-10 flex items-end rounded-2xl  min-h-[37rem] md:min-h-[20rem] md:min-w-[2rem] bg-cover ${island.imgUrl}`}>
                 <div className="md:hidden flex flex-col gap-5 p-5 w-full h-fit bg-gray-800 bg-opacity-50 rounded-b-2xl">
                     <h1 className="text-[#DEDFDF] font-bold text-5xl">{`0${i+1}`}</h1>
                     <h2 className="text-white font-bold text-5xl">{island.title}</h2>
                     <h3 className="text-white font-semibold text-lg">{island.desc}</h3>
-                    <Link className="text-gold font-semibold" href='/penang'>{`Explore more ->`}</Link>
+                    <Link className="text-gold font-semibold" href={island.href}>{`Explore more ->`}</Link>
                 </div>
             </div>
 
-            <div className="hidden md:flex flex-col gap-5 p-5 w-full h-fit">
+            <div className="hidden z-10 md:flex flex-col gap-5 p-5 w-full h-fit">
                 <h1 className="text-[#DEDFDF] font-bold text-5xl">{`0${i+1}`}</h1>
                 <h2 className="text-black font-bold text-5xl">{island.title}</h2>
                 <h3 className="text-black font-semibold text-lg">{island.desc}</h3>
-                <Link className="text-gold font-semibold" href='/penang'>{`Explore more ->`}</Link>
+                <Link className="text-gold font-semibold" href={island.href}>{`Explore more ->`}</Link>
             </div>
         </div>
         
