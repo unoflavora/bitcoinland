@@ -39,7 +39,7 @@ export default function Token()
 
             </h1>
 
-            <div className="flex flex-col md:flex-row-reverse gap-8  justify-center items-center">
+            <div className="flex flex-col md:flex-row-reverse gap-8 npm justify-center items-center">
                 <div className=" p-8 rounded-xl w-full flex justify-center items-center">
                 <Image className="w-full h-full" src="/story/rxt_graph.png" width={500} height={1000} alt="token"/>
 
