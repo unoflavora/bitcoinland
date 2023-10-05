@@ -24,8 +24,6 @@ export default function Navbar()
     const [isOpen, setOpen] = useState(false)
     const [viewIslands, setViewIslands] = useState(false)
 
-    const [navVisible, setNavVisible] = useState(false);
-
     useEffect(
         () =>
             scrollVelocity.on('change', (latest) => {
@@ -99,7 +97,7 @@ export default function Navbar()
             </div>
             <ul className='max-sm:hidden flex gap-10 items-center lg:text-2xl font-semibold '>
                 {links.map((title, i) => 
-                <Link className='hover:scale-110'  onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "story" : ""}`} key={"link " + i}>
+                <Link className='hover:scale-110'  onClick={() =>{setOpen(false); setViewIslands(false)}} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "story" : ""}`} key={"link " + i}>
                     {title}
                 </Link>)}
 
