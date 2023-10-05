@@ -3,6 +3,8 @@ import type { AppProps } from 'next/app'
 import Layout from './_components/layout'
 import AppState from './state/state'
 import Head from 'next/head'
+import { Analytics } from '@vercel/analytics/react';
+
 
 export default function App({ Component, pageProps }: AppProps) {
   return ( 
@@ -26,6 +28,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <AppState>
       <Layout>
           <Component {...pageProps} />
+          <Analytics/>
       </Layout>
     </AppState>
     </>
