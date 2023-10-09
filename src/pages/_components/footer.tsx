@@ -31,7 +31,6 @@ export default function Footer()
                     <Link className="hover:scale-110" href="/">Home</Link>
                     <Link className="hover:scale-110" href="/story">Our Story</Link>
                     <Link className="hover:scale-110" href="/contact">Contact Us</Link>
-
                 </div>
             </div>
         </div>

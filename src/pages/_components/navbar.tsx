@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Navbar()
 {
-    const links = ["Home", "Our Story"];
+    const links = [{title: "Home", url: "/"}, {title: "Our Story", url: "/story"}, {title: "News", url: "/news"}];
 
     const slideDistance = 100 // if we are sliding out a nav bar at the top of the screen, this will be it's height
 
@@ -96,9 +96,9 @@ export default function Navbar()
                 <Hamburger toggled={isOpen} toggle={setOpen} rounded distance='lg' color="white" size={28} direction='left'/>
             </div>
             <ul className='max-sm:hidden flex gap-10 items-center lg:text-2xl font-semibold '>
-                {links.map((title, i) => 
-                <Link className='hover:scale-110'  onClick={() =>{setOpen(false); setViewIslands(false)}} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "story" : ""}`} key={"link " + i}>
-                    {title}
+                {links.map((link, i) => 
+                <Link className='hover:scale-110'  onClick={() =>{setOpen(false); setViewIslands(false)}} href={link.url} key={"link " + i}>
+                    {link.title}
                 </Link>)}
 
                 <button onClick={() => {
@@ -124,15 +124,15 @@ export default function Navbar()
                 transition={{ease : easeInOut, duration: .2}}
                 className={`absolute translate-x-full flex flex-col top-12 text-3xl gap-10  bg-grey text-white b min-h-screen w-screen py-10 px-5 z-10`}>
 
-                {links.map((title, i) => 
-                <Link onClick={() =>setOpen(false)} href={`/${title !== "Home" ? title !== "Our Story" ? "" : "story" : ""}`} key={"link " + i}>
+                {links.map((link, i) => 
+                <Link onClick={() =>setOpen(false)} href={link.url} key={"link " + i}>
                     <motion.li 
                         animate={{x: isOpen ? 0 : "200%"}}
                         transition={{delay : .1 * i, duration: .35}}
                         key={"link " + i}
                         className={`border-b-[0.15rem] py-5 `}
                         >
-                        {title}
+                        {link.title}
                     </motion.li>
                 </Link>
 
