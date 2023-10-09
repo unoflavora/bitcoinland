@@ -2,6 +2,7 @@ import { parentElementStyle } from "@/lib/classnames";
 import Header from "../_components/header";
 import Image from "next/image";
 import Link from "next/link";
+import ColorizedText from "../_components/colorizedText";
 
 export default function Page()
 {
@@ -50,7 +51,7 @@ export default function Page()
 ]
     return <div className={parentElementStyle}>
         <Image src="/icon.png" width={300} height={500} alt=""/>
-        <h1 className="text-gold font-bold text-4xl">RXT NEWS</h1>
+        <h1 className="text-gold font-bold text-6xl"><ColorizedText from="from-black" to="to-gold" text={"RXT NEWS"} animate/></h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 w-full">
             {news.map((newd, i) =>
             <Link key={newd.url} href={newd.url} className="bg-white rounded-xl flex flex-col py-5 justify-center items-center w-full h-full border">
