@@ -15,7 +15,7 @@ export default function Page()
     },
     {
         title: "Yahoo Finance",
-        image: "bg-[url('https://s.yimg.com/rz/p/yahoo_finance_en-US_h_p_financev2.png')]",
+        image: "bg-[url('/company/yahoo.png')]",
         url: "https://finance.yahoo.com/news/rxt-token-concludes-first-session-024900442.html"
     },
     {
@@ -30,22 +30,22 @@ export default function Page()
     },
     {
         title: "Menafn",
-        image: "bg-[url('https://menafn.com/includes/img/logo.jpg')]",
+        image: "bg-[url('/company/mfn.png')]",
         url: "https://menafn.com/1106791170/Rxt-Token-Concludes-First-Session-Of-World-Tour-For-Mega-Project-Bitcoinland-Malaysia-In-Bangkok-Thailand"
     },
     {
         title: "Yahoo Finance HK",
-        image: "bg-[url('https://s.yimg.com/rz/p/yahoo_finance_en-US_h_p_financev2.png')]",
+        image: "bg-[url('/company/yahoo.png')]",
         url: "https://s.yimg.com/rz/p/yahoo_finance_en-US_h_p_financev2.png"
     },
     {
         title: "Yahoo Finance UK",
-        image: "bg-[url('https://s.yimg.com/rz/p/yahoo_finance_en-US_h_p_financev2.png')]",
+        image: "bg-[url('/company/yahoo.png')]",
         url: "https://uk.finance.yahoo.com/news/rxt-token-concludes-first-session-024900442.html"
     },
     {
         title: "Streetinsider",
-        image: "bg-[url('https://www.streetinsider.com/images/silogo-new.png')]",
+        image: "bg-[url('https://www.interactivebrokers.com/images/2015/logos/company_logo_street_insider.png')]",
         url: "https://www.streetinsider.com/Newsfile/RXT+Token+Concludes+First+Session+of+World+Tour+for+Mega+Project+Bitcoinland+Malaysia+in+Bangkok%2C+Thailand/22002387.html"
     },
 ]
@@ -54,7 +54,7 @@ export default function Page()
         <h1 className="text-gold font-bold text-6xl"><ColorizedText from="from-black" to="to-gold" text={"RXT NEWS"} animate/></h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 w-full">
             {news.map((newd, i) =>
-            <Link key={newd.url} href={newd.url} className="bg-white rounded-xl flex flex-col py-5 justify-center items-center w-full h-full border">
+            <Link key={newd.url} href={newd.url} className="bg-white hover:bg-slate-300 rounded-xl flex flex-col py-5 justify-center items-center w-full h-full border">
                 <div className={`w-full h-full min-h-[11rem] ${newd.image} bg-contain bg-no-repeat bg-center bg-`}/>
                 <div className="flex flex-col">
                     <h2 className="text-black font-bold">{newd.title}</h2>
