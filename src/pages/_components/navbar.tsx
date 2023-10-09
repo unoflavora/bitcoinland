@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 export default function Navbar()
 {
-    const links = [{title: "Home", url: "/"}, {title: "Our Story", url: "/story"}, {title: "News", url: "/news"}];
+    const links = [{title: "Home", url: "/"}, {title: "Our Story", url: "/story"}, {title: "News", url: "/news"}, {title: "Media Partner", url : "/media"}];
 
     const slideDistance = 100 // if we are sliding out a nav bar at the top of the screen, this will be it's height
 
@@ -95,7 +95,7 @@ export default function Navbar()
             <div className='md:hidden flex h-full justify-center'>
                 <Hamburger toggled={isOpen} toggle={setOpen} rounded distance='lg' color="white" size={28} direction='left'/>
             </div>
-            <ul className='max-sm:hidden flex gap-10 items-center lg:text-2xl font-semibold '>
+            <ul className='max-md:hidden flex gap-10 items-center lg:text-2xl font-semibold '>
                 {links.map((link, i) => 
                 <Link className='hover:scale-110'  onClick={() =>{setOpen(false); setViewIslands(false)}} href={link.url} key={"link " + i}>
                     {link.title}
@@ -122,7 +122,7 @@ export default function Navbar()
                 initial={{x: "100%"}}
                 animate={{x: isOpen ? 0 : "100%"}}
                 transition={{ease : easeInOut, duration: .2}}
-                className={`absolute translate-x-full flex flex-col top-12 text-3xl gap-10  bg-grey text-white b min-h-screen w-screen py-10 px-5 z-10`}>
+                className={`absolute translate-x-full flex flex-col top-12 text-3xl gap-10 pb-20 max-h-full overflow-scroll  bg-grey text-white b min-h-screen w-screen py-10 px-5 z-10`}>
 
                 {links.map((link, i) => 
                 <Link onClick={() =>setOpen(false)} href={link.url} key={"link " + i}>

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { parentElementStyle } from "@/lib/classnames";
 import Header from "../_components/header";
 import Image from "next/image";
@@ -6,62 +7,35 @@ import ColorizedText from "../_components/colorizedText";
 
 export default function Page()
 {
-    const news = [
-
-    {
-        title: "Bloomberg",
-        image: "bg-[url('https://logowik.com/content/uploads/images/bloomberg-media4038.jpg')]",
-        url: "https://www.bloomberg.com/press-releases/2023-08-06/rxt-token-concludes-first-session-of-world-tour-for-mega-project-bitcoinland-malaysia-in-bangkok-thailand"
-    },
-    {
-        title: "Yahoo Finance",
-        image: "bg-[url('/company/yahoo.png')]",
-        url: "https://finance.yahoo.com/news/rxt-token-concludes-first-session-024900442.html"
-    },
-    {
-        title : "RXT 世界巡回路演在曼谷与泰国加密社区见面",
-        image: "bg-[url('http://net.itlans.cn/uploads/logos/20230104/8154a6cb5662a60dc78fe4935a9a4c3d.png')]",
-        url: "http://net.itlans.cn/shehui/578.html",   
-    },
-    {
-        title: "Investor Observers",
-        image: 'bg-[url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtcG5z4GgndJ2hSEwGTtK9IhoYiuQIQeu1DWyQCsDtrEG9PUc0lZ7vf3udsb_XCU7Jgg&usqp=CAU")]',
-        url: "https://www.investorsobserver.com/news/qm-pr/5797500451859980"
-    },
-    {
-        title: "Menafn",
-        image: "bg-[url('/company/mfn.png')]",
-        url: "https://menafn.com/1106791170/Rxt-Token-Concludes-First-Session-Of-World-Tour-For-Mega-Project-Bitcoinland-Malaysia-In-Bangkok-Thailand"
-    },
-    {
-        title: "Yahoo Finance HK",
-        image: "bg-[url('/company/yahoo.png')]",
-        url: "https://s.yimg.com/rz/p/yahoo_finance_en-US_h_p_financev2.png"
-    },
-    {
-        title: "Yahoo Finance UK",
-        image: "bg-[url('/company/yahoo.png')]",
-        url: "https://uk.finance.yahoo.com/news/rxt-token-concludes-first-session-024900442.html"
-    },
-    {
-        title: "Streetinsider",
-        image: "bg-[url('https://play-lh.googleusercontent.com/bQ05KglW7QLHDggS3y43rkPGtzUj08exl4GM4L5-j0YMRcAaZd4WXLf2BCSoRFPQCmFm')]",
-        url: "https://www.streetinsider.com/Newsfile/RXT+Token+Concludes+First+Session+of+World+Tour+for+Mega+Project+Bitcoinland+Malaysia+in+Bangkok%2C+Thailand/22002387.html"
-    },
-]
     return <div className={parentElementStyle}>
         <Image src="/icon.png" width={300} height={500} alt=""/>
         <h1 className="text-gold font-bold text-6xl"><ColorizedText from="from-black" to="to-gold" text={"RXT NEWS"} animate/></h1>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 w-full">
-            {news.map((newd, i) =>
-            <Link key={newd.url} href={newd.url} className="bg-white hover:bg-slate-300 rounded-xl flex flex-col py-5 justify-center items-center w-full h-full border">
-                <div className={`w-full h-full min-h-[11rem] ${newd.image} bg-contain bg-no-repeat bg-center bg-`}/>
-                <div className="flex flex-col">
-                    <h2 className="text-black font-bold">{newd.title}</h2>
-                </div>
-            </Link>
-            )}
+        <h2 className="text-black font-semibold text-4xl">
+            RXT Token Concludes First Session of World Tour for Mega Project Bitcoinland Malaysia in Bangkok, Thailand
+        </h2>
+        <article className="text-text-grey text-lg flex flex-col gap-3 justify-center items-center">
+            <p>
+            Bangkok, Thailand--(Newsfile Corp. - August 5, 2023) - RXT Token, a prominent issuer in the cryptocurrency industry, announces the successful conclusion of the first session of its world tour for the preparation of the mega project, Bitcoinland Malaysia. The event took place in Bangkok, Thailand.
+            </p>
+            <Image src="/graphics/bitcoinland1.jpg" width={500} height={200} alt="image of press conferencce"/>
+            <p>
+            The purpose of this event was to introduce RXT's mega project property in Malaysia, known as Bitcoinland, to various key opinion leaders (KOLs) in Thailand. Additionally, RXT took the opportunity to unveil an upcoming web-based game that enables players to earn through gameplay.
+            </p>
 
-        </div>
+            <p>
+            Thailand, recognized as a thriving crypto hub in Southeast Asia, provided the ideal backdrop for this meeting. Its robust infrastructure supports numerous crypto communities and has attracted several world-class exchanges to relocate their operations to the country.
+            </p>
+
+            <p className="w-full text-start">
+            RXT values the opportunity to expand its network and connect with the vibrant Thai crypto community. This event served as a significant milestone in strengthening RXT's presence in the region.
+            </p>
+            <Image src="/graphics/bitcoinland2.jpg" width={500} height={200} alt="image of press conferencce"/>
+
+            <p className="w-full text-start">
+            Additionally, RXT took the opportunity to inform the entire Thai crypto community that it will soon be releasing a web-based Play-to-Earn game, <Link href={"https://Metaverse.RXT.World"}> Metaverse.RXT.World</Link>
+            </p>
+            <Image src="/graphics/bitcoinland3.jpg" width={500} height={200} alt="image of press conferencce"/>
+
+        </article>
     </div>
 }
