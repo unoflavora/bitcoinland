@@ -45,7 +45,7 @@ export default function Page()
     },
     {
         title: "Streetinsider",
-        image: "bg-[url('https://www.interactivebrokers.com/images/2015/logos/company_logo_street_insider.png')]",
+        image: "bg-[url('https://play-lh.googleusercontent.com/bQ05KglW7QLHDggS3y43rkPGtzUj08exl4GM4L5-j0YMRcAaZd4WXLf2BCSoRFPQCmFm')]",
         url: "https://www.streetinsider.com/Newsfile/RXT+Token+Concludes+First+Session+of+World+Tour+for+Mega+Project+Bitcoinland+Malaysia+in+Bangkok%2C+Thailand/22002387.html"
     },
 ]
