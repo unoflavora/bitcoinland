@@ -50,7 +50,7 @@ export default function Page()
 ]
     return <div className={parentElementStyle}>
         <Image src="/icon.png" width={300} height={500} alt=""/>
-        <h1 className="text-gold font-bold text-4xl">RTX NEWS</h1>
+        <h1 className="text-gold font-bold text-4xl">RXT NEWS</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 w-full">
             {news.map((newd, i) =>
             <Link key={newd.url} href={newd.url} className="bg-white rounded-xl flex flex-col py-5 justify-center items-center w-full h-full border">
