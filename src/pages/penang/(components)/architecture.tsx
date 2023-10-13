@@ -31,14 +31,6 @@ export default function Architecture()
             </div>)}
         </div>
 
-        <div className="relative w-full flex flex-col md:flex-row rounded-xl bg-gradient-to-t md:bg-gradient-to-l from-gold ">
-            <Image className="rounded-xl" src="/penang/canal-plan.webp" width={500} height={500} alt="hotel plan"/>
-            <div className=" flex flex-col justify-center items-center  text-white">
-                <h2 className="font-bold md:text-xl  p-3"> Permeable Through Canals </h2>
-                <h1 className="font-bold text-2xl md:text-4xl  p-3">Canal City Boasting Vibrant Water Culture</h1>
-            </div>
-        </div>
-
         <div className="w-full h-full flex flex-col max-sm:gap-5 justify-center items-center md:grid md:grid-cols-2">
         <div className="text-zinc-900 text-4xl font-bold leading-10">Canals Frontage Permeability</div>
         <Image className="rounded-xl" src="/penang/canals.webp" width={1200} height={500} alt="hotel plan"/>

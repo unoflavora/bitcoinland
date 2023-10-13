@@ -95,7 +95,7 @@ export default function Navbar()
             <div className='md:hidden flex h-full justify-center'>
                 <Hamburger toggled={isOpen} toggle={setOpen} rounded distance='lg' color="white" size={28} direction='left'/>
             </div>
-            <ul className='max-md:hidden flex gap-10 items-center lg:text-2xl font-semibold '>
+            <ul className='max-md:hidden flex gap-10 items-center lg:text-lg font-semibold '>
                 {links.map((link, i) => 
                 <Link className='hover:scale-110'  onClick={() =>{setOpen(false); setViewIslands(false)}} href={link.url} key={"link " + i}>
                     {link.title}
